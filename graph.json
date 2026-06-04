@@ -1,0 +1,2067 @@
+{
+  "graph": {
+    "origin": {
+      "module": "github.com/openshift/origin",
+      "depends_on": [
+        "openshift/api",
+        "openshift/apiserver-library-go",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "osin": {
+      "module": "github.com/openshift/osin",
+      "depends_on": [
+        "openshift/build-machinery-go",
+        "openshift/osincli"
+      ]
+    },
+    "library": {
+      "module": "github.com/openshift/library",
+      "depends_on": [
+        "openshift/api"
+      ]
+    },
+    "image-registry": {
+      "module": "github.com/openshift/image-registry",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "installer": {
+      "module": "github.com/openshift/installer",
+      "depends_on": [
+        "openshift/api",
+        "openshift/assisted-image-service",
+        "openshift/assisted-service/api",
+        "openshift/assisted-service/client",
+        "openshift/assisted-service/models",
+        "openshift/client-go",
+        "openshift/cloud-credential-operator",
+        "openshift/cluster-api-provider-baremetal",
+        "openshift/cluster-api-provider-libvirt",
+        "openshift/cluster-api-provider-ovirt",
+        "openshift/hive/apis",
+        "openshift/library-go",
+        "openshift/machine-api-provider-gcp",
+        "openshift/machine-api-provider-ibmcloud"
+      ]
+    },
+    "library-go": {
+      "module": "github.com/openshift/library-go",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go"
+      ]
+    },
+    "cluster-monitoring-operator": {
+      "module": "github.com/openshift/cluster-monitoring-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "machine-api-operator": {
+      "module": "github.com/openshift/machine-api-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cluster-api-actuator-pkg/testutils",
+        "openshift/cluster-control-plane-machine-set-operator",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-dns-operator": {
+      "module": "github.com/openshift/cluster-dns-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/coredns-ocp-dnsnameresolver/operator",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-version-operator": {
+      "module": "github.com/openshift/cluster-version-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/lightspeed-agentic-operator/api"
+      ]
+    },
+    "cluster-image-registry-operator": {
+      "module": "github.com/openshift/cluster-image-registry-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-samples-operator": {
+      "module": "github.com/openshift/cluster-samples-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-ingress-operator": {
+      "module": "github.com/openshift/cluster-ingress-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "machine-config-operator": {
+      "module": "github.com/openshift/machine-config-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/runtime-utils"
+      ]
+    },
+    "cluster-kube-apiserver-operator": {
+      "module": "github.com/openshift/cluster-kube-apiserver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-logging-operator": {
+      "module": "github.com/openshift/cluster-logging-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cluster-logging-operator/api/observability",
+        "openshift/hypershift/api"
+      ]
+    },
+    "cluster-api-provider-libvirt": {
+      "module": "github.com/openshift/cluster-api-provider-libvirt",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "cluster-storage-operator": {
+      "module": "github.com/openshift/cluster-storage-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-network-operator": {
+      "module": "github.com/openshift/cluster-network-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/machine-config-operator"
+      ]
+    },
+    "csi-operator": {
+      "module": "github.com/openshift/csi-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/hypershift/api",
+        "openshift/library-go"
+      ]
+    },
+    "elasticsearch-operator": {
+      "module": "github.com/openshift/elasticsearch-operator",
+      "depends_on": [
+        "openshift/api"
+      ]
+    },
+    "service-ca-operator": {
+      "module": "github.com/openshift/service-ca-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "builder": {
+      "module": "github.com/openshift/builder",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/imagebuilder",
+        "openshift/library-go",
+        "openshift/source-to-image"
+      ]
+    },
+    "local-storage-operator": {
+      "module": "github.com/openshift/local-storage-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-openshift-apiserver-operator": {
+      "module": "github.com/openshift/cluster-openshift-apiserver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "console-operator": {
+      "module": "github.com/openshift/console-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-openshift-controller-manager-operator": {
+      "module": "github.com/openshift/cluster-openshift-controller-manager-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "release-controller": {
+      "module": "github.com/openshift/release-controller",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/ci-tools",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-kube-controller-manager-operator": {
+      "module": "github.com/openshift/cluster-kube-controller-manager-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "hive": {
+      "module": "github.com/openshift/hive",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/cluster-autoscaler-operator",
+        "openshift/cluster-control-plane-machine-set-operator",
+        "openshift/generic-admission-server",
+        "openshift/hive/apis",
+        "openshift/installer",
+        "openshift/library-go",
+        "openshift/machine-api-operator",
+        "openshift/machine-api-provider-gcp",
+        "openshift/machine-api-provider-ibmcloud"
+      ]
+    },
+    "cluster-kube-scheduler-operator": {
+      "module": "github.com/openshift/cluster-kube-scheduler-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-kube-descheduler-operator": {
+      "module": "github.com/openshift/cluster-kube-descheduler-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-api-actuator-pkg": {
+      "module": "github.com/openshift/cluster-api-actuator-pkg",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cluster-api-actuator-pkg/testutils",
+        "openshift/cluster-autoscaler-operator",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "cluster-node-tuning-operator": {
+      "module": "github.com/openshift/cluster-node-tuning-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/custom-resource-status",
+        "openshift/hypershift/api",
+        "openshift/library-go"
+      ]
+    },
+    "openshift-tuned": {
+      "module": "github.com/openshift/openshift-tuned",
+      "depends_on": [
+        "openshift/cluster-node-tuning-operator"
+      ]
+    },
+    "cluster-autoscaler-operator": {
+      "module": "github.com/openshift/cluster-autoscaler-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "cluster-nfd-operator": {
+      "module": "github.com/openshift/cluster-nfd-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "cluster-machine-approver": {
+      "module": "github.com/openshift/cluster-machine-approver",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "ci-chat-bot": {
+      "module": "github.com/openshift/ci-chat-bot",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/ci-tools",
+        "openshift/client-go",
+        "openshift/hive",
+        "openshift/hive/apis",
+        "openshift/installer",
+        "openshift/oc",
+        "openshift/rosa"
+      ]
+    },
+    "cluster-etcd-operator": {
+      "module": "github.com/openshift/cluster-etcd-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "node-feature-discovery": {
+      "module": "github.com/openshift/node-feature-discovery",
+      "depends_on": [
+        "openshift/node-feature-discovery/api/nfd"
+      ]
+    },
+    "cluster-authentication-operator": {
+      "module": "github.com/openshift/cluster-authentication-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/multi-operator-manager",
+        "openshift/oauth-apiserver"
+      ]
+    },
+    "cluster-bootstrap": {
+      "module": "github.com/openshift/cluster-bootstrap",
+      "depends_on": [
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/installer",
+        "openshift/library-go"
+      ]
+    },
+    "router": {
+      "module": "github.com/openshift/router",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cloud-credential-operator": {
+      "module": "github.com/openshift/cloud-credential-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-config-operator": {
+      "module": "github.com/openshift/cluster-config-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-svcat-apiserver-operator": {
+      "module": "github.com/openshift/cluster-svcat-apiserver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "coredns-mdns": {
+      "module": "github.com/openshift/coredns-mdns/v4",
+      "depends_on": [
+        "openshift/mdns-publisher"
+      ]
+    },
+    "configure-alertmanager-operator": {
+      "module": "github.com/openshift/configure-alertmanager-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/osde2e-common"
+      ]
+    },
+    "pagerduty-operator": {
+      "module": "github.com/openshift/pagerduty-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/hive/apis",
+        "openshift/operator-custom-metrics"
+      ]
+    },
+    "certman-operator": {
+      "module": "github.com/openshift/certman-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/aws-account-operator/api",
+        "openshift/client-go",
+        "openshift/hive/apis",
+        "openshift/operator-custom-metrics",
+        "openshift/osde2e-common"
+      ]
+    },
+    "aws-account-operator": {
+      "module": "github.com/openshift/aws-account-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/aws-account-operator/api",
+        "openshift/operator-custom-metrics"
+      ]
+    },
+    "ci-search": {
+      "module": "github.com/openshift/ci-search",
+      "depends_on": [
+        "openshift/build-machinery-go",
+        "openshift/library-go"
+      ]
+    },
+    "deadmanssnitch-operator": {
+      "module": "github.com/openshift/deadmanssnitch-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/hive/apis",
+        "openshift/operator-custom-metrics"
+      ]
+    },
+    "openshift-state-metrics": {
+      "module": "github.com/openshift/openshift-state-metrics",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "osde2e": {
+      "module": "github.com/openshift/osde2e",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cloud-credential-operator",
+        "openshift/managed-upgrade-operator",
+        "openshift/osde2e-common"
+      ]
+    },
+    "openshift-apiserver": {
+      "module": "github.com/openshift/openshift-apiserver",
+      "depends_on": [
+        "openshift/api",
+        "openshift/apiserver-library-go",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/runtime-utils"
+      ]
+    },
+    "sriov-network-operator": {
+      "module": "github.com/k8snetworkplumbingwg/sriov-network-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "openshift-controller-manager": {
+      "module": "github.com/openshift/openshift-controller-manager",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/runtime-utils"
+      ]
+    },
+    "oauth-server": {
+      "module": "github.com/openshift/oauth-server",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/osin",
+        "openshift/osincli"
+      ]
+    },
+    "oc": {
+      "module": "github.com/openshift/oc",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "ci-tools": {
+      "module": "github.com/openshift/ci-tools",
+      "depends_on": [
+        "openshift/api",
+        "openshift/builder",
+        "openshift/client-go",
+        "openshift/cloud-credential-operator",
+        "openshift/cluster-autoscaler-operator",
+        "openshift/hive/apis",
+        "openshift/imagebuilder",
+        "openshift/installer",
+        "openshift/library-go",
+        "openshift/openshift-apiserver"
+      ]
+    },
+    "baremetal-runtimecfg": {
+      "module": "github.com/openshift/baremetal-runtimecfg",
+      "depends_on": [
+        "openshift/api",
+        "openshift/installer"
+      ]
+    },
+    "vertical-pod-autoscaler-operator": {
+      "module": "github.com/openshift/vertical-pod-autoscaler-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cluster-version-operator",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "sdn": {
+      "module": "github.com/openshift/sdn",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "rbac-permissions-operator": {
+      "module": "github.com/openshift/rbac-permissions-operator",
+      "depends_on": [
+        "openshift/operator-custom-metrics",
+        "openshift/osde2e-common"
+      ]
+    },
+    "openshift-velero-plugin": {
+      "module": "github.com/konveyor/openshift-velero-plugin",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/oadp-operator"
+      ]
+    },
+    "insights-operator": {
+      "module": "github.com/openshift/insights-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/installer",
+        "openshift/library-go"
+      ]
+    },
+    "apiserver-library-go": {
+      "module": "github.com/openshift/apiserver-library-go",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "managed-velero-operator": {
+      "module": "github.com/openshift/managed-velero-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cloud-credential-operator",
+        "openshift/operator-custom-metrics"
+      ]
+    },
+    "elasticsearch-proxy": {
+      "module": "github.com/openshift/elasticsearch-proxy",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "cluster-kube-storage-version-migrator-operator": {
+      "module": "github.com/openshift/cluster-kube-storage-version-migrator-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-policy-controller": {
+      "module": "github.com/openshift/cluster-policy-controller",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "ptp-operator": {
+      "module": "github.com/k8snetworkplumbingwg/ptp-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "runtime-utils": {
+      "module": "github.com/openshift/runtime-utils",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go"
+      ]
+    },
+    "sriov-tests": {
+      "module": "github.com/openshift/sriov-tests",
+      "depends_on": [
+        "openshift/client-go",
+        "openshift/machine-config-operator",
+        "openshift/sriov-network-operator"
+      ]
+    },
+    "managed-cluster-validating-webhooks": {
+      "module": "github.com/openshift/managed-cluster-validating-webhooks",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cluster-logging-operator",
+        "openshift/hive/apis",
+        "openshift/operator-custom-metrics",
+        "openshift/osde2e-common"
+      ]
+    },
+    "cluster-debug-tools": {
+      "module": "github.com/openshift/cluster-debug-tools",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/library-go"
+      ]
+    },
+    "file-integrity-operator": {
+      "module": "github.com/openshift/file-integrity-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go",
+        "openshift/machine-config-operator"
+      ]
+    },
+    "cluster-resource-override-admission": {
+      "module": "github.com/openshift/cluster-resource-override-admission",
+      "depends_on": [
+        "openshift/build-machinery-go",
+        "openshift/generic-admission-server"
+      ]
+    },
+    "cloud-ingress-operator": {
+      "module": "github.com/openshift/cloud-ingress-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/operator-custom-metrics",
+        "openshift/osde2e-common"
+      ]
+    },
+    "cluster-resource-override-admission-operator": {
+      "module": "github.com/openshift/cluster-resource-override-admission-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/controller-runtime-common"
+      ]
+    },
+    "splunk-forwarder-operator": {
+      "module": "github.com/openshift/splunk-forwarder-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/operator-custom-metrics",
+        "openshift/osde2e-common"
+      ]
+    },
+    "oauth-apiserver": {
+      "module": "github.com/openshift/oauth-apiserver",
+      "depends_on": [
+        "openshift/api",
+        "openshift/apiserver-library-go",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "compliance-operator": {
+      "module": "github.com/openshift/compliance-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go",
+        "openshift/machine-config-operator"
+      ]
+    },
+    "cluster-csi-snapshot-controller-operator": {
+      "module": "github.com/openshift/cluster-csi-snapshot-controller-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "csi-driver-manila-operator": {
+      "module": "github.com/openshift/csi-driver-manila-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "aws-ebs-csi-driver-operator": {
+      "module": "github.com/openshift/aws-ebs-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "egress-router-cni": {
+      "module": "github.com/openshift/egress-router-cni",
+      "depends_on": [
+        "openshift/build-machinery-go"
+      ]
+    },
+    "windows-machine-config-operator": {
+      "module": "github.com/openshift/windows-machine-config-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "ibm-roks-toolkit": {
+      "module": "github.com/openshift/ibm-roks-toolkit",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cluster-kube-apiserver-operator",
+        "openshift/cluster-openshift-apiserver-operator",
+        "openshift/cluster-openshift-controller-manager-operator",
+        "openshift/library-go",
+        "openshift/oc",
+        "openshift/openshift-controller-manager"
+      ]
+    },
+    "aws-efs-operator": {
+      "module": "openshift/aws-efs-operator",
+      "depends_on": [
+        "openshift/api"
+      ]
+    },
+    "oadp-operator": {
+      "module": "github.com/openshift/oadp-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/hypershift/api"
+      ]
+    },
+    "osdctl": {
+      "module": "github.com/openshift/osdctl",
+      "depends_on": [
+        "openshift/api",
+        "openshift/aws-account-operator/api",
+        "openshift/backplane-api",
+        "openshift/backplane-cli",
+        "openshift/cloud-credential-operator",
+        "openshift/gcp-project-operator",
+        "openshift/hive/apis",
+        "openshift/hypershift/api",
+        "openshift/ocm-container",
+        "openshift/osd-network-verifier"
+      ]
+    },
+    "managed-upgrade-operator": {
+      "module": "github.com/openshift/managed-upgrade-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cluster-version-operator",
+        "openshift/library-go",
+        "openshift/operator-custom-metrics",
+        "openshift/osde2e-common"
+      ]
+    },
+    "cincinnati-operator": {
+      "module": "github.com/openshift/cincinnati-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cluster-image-registry-operator",
+        "openshift/custom-resource-status",
+        "openshift/library-go"
+      ]
+    },
+    "assisted-installer": {
+      "module": "github.com/openshift/assisted-installer",
+      "depends_on": [
+        "openshift/api",
+        "openshift/assisted-installer-agent",
+        "openshift/assisted-service",
+        "openshift/assisted-service/api",
+        "openshift/assisted-service/client",
+        "openshift/assisted-service/models",
+        "openshift/client-go",
+        "openshift/machine-config-operator"
+      ]
+    },
+    "assisted-service": {
+      "module": "github.com/openshift/assisted-service",
+      "depends_on": [
+        "openshift/api",
+        "openshift/assisted-image-service",
+        "openshift/assisted-service/api",
+        "openshift/assisted-service/client",
+        "openshift/assisted-service/cmd/agentbasedinstaller",
+        "openshift/assisted-service/models",
+        "openshift/client-go",
+        "openshift/cluster-baremetal-operator",
+        "openshift/custom-resource-status",
+        "openshift/generic-admission-server",
+        "openshift/hive/apis",
+        "openshift/image-customization-controller",
+        "openshift/library-go",
+        "openshift/machine-config-operator"
+      ]
+    },
+    "bugzilla-tools": {
+      "module": "github.com/openshift/bugzilla-tools",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/sippy"
+      ]
+    },
+    "csi-driver-shared-resource": {
+      "module": "github.com/openshift/csi-driver-shared-resource",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "cluster-baremetal-operator": {
+      "module": "github.com/openshift/cluster-baremetal-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "sandboxed-containers-operator": {
+      "module": "github.com/openshift/sandboxed-containers-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cloud-credential-operator",
+        "openshift/machine-config-operator",
+        "openshift/oc"
+      ]
+    },
+    "assisted-installer-agent": {
+      "module": "github.com/openshift/assisted-installer-agent",
+      "depends_on": [
+        "openshift/assisted-service",
+        "openshift/assisted-service/api",
+        "openshift/assisted-service/client",
+        "openshift/assisted-service/models",
+        "openshift/baremetal-runtimecfg"
+      ]
+    },
+    "route-monitor-operator": {
+      "module": "github.com/openshift/route-monitor-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/aws-vpce-operator",
+        "openshift/hypershift/api",
+        "openshift/osde2e",
+        "openshift/osde2e-common"
+      ]
+    },
+    "must-gather-operator": {
+      "module": "github.com/openshift/must-gather-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/operator-custom-metrics"
+      ]
+    },
+    "cluster-cloud-controller-manager-operator": {
+      "module": "github.com/openshift/cluster-cloud-controller-manager-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cluster-api-actuator-pkg/testutils",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "openstack-cinder-csi-driver-operator": {
+      "module": "github.com/openshift/openstack-cinder-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "osd-metrics-exporter": {
+      "module": "github.com/openshift/osd-metrics-exporter",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cluster-network-operator",
+        "openshift/operator-custom-metrics",
+        "openshift/osde2e-common"
+      ]
+    },
+    "gcp-pd-csi-driver-operator": {
+      "module": "github.com/openshift/gcp-pd-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "vsphere-problem-detector": {
+      "module": "github.com/openshift/vsphere-problem-detector",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "operator-framework-olm": {
+      "module": "github.com/openshift/operator-framework-olm",
+      "depends_on": [
+        "openshift/api"
+      ]
+    },
+    "special-resource-operator": {
+      "module": "github.com/openshift/special-resource-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "kubevirt-csi-driver-operator": {
+      "module": "github.com/kubevirt/csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go"
+      ]
+    },
+    "azure-disk-csi-driver-operator": {
+      "module": "github.com/openshift/azure-disk-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "hypershift": {
+      "module": "github.com/openshift/hypershift",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cloud-credential-operator",
+        "openshift/cluster-api-provider-agent/api",
+        "openshift/cluster-autoscaler-operator",
+        "openshift/cluster-node-tuning-operator",
+        "openshift/custom-resource-status",
+        "openshift/hypershift/api",
+        "openshift/library-go",
+        "openshift/multi-operator-manager"
+      ]
+    },
+    "cloud-network-config-controller": {
+      "module": "github.com/openshift/cloud-network-config-controller",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "vmware-vsphere-csi-driver-operator": {
+      "module": "github.com/openshift/vmware-vsphere-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "csi-driver-shared-resource-operator": {
+      "module": "github.com/openshift/csi-driver-shared-resource-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cert-manager-operator": {
+      "module": "github.com/openshift/cert-manager-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "microshift": {
+      "module": "github.com/openshift/microshift",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/cluster-policy-controller",
+        "openshift/library-go",
+        "openshift/route-controller-manager"
+      ]
+    },
+    "addon-operator": {
+      "module": "github.com/openshift/addon-operator",
+      "depends_on": [
+        "openshift/addon-operator/apis",
+        "openshift/api"
+      ]
+    },
+    "reference-addon": {
+      "module": "github.com/openshift/reference-addon",
+      "depends_on": [
+        "openshift/addon-operator",
+        "openshift/addon-operator/apis"
+      ]
+    },
+    "secondary-scheduler-operator": {
+      "module": "github.com/openshift/secondary-scheduler-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "oc-mirror": {
+      "module": "github.com/openshift/oc-mirror/v2",
+      "depends_on": [
+        "openshift/api"
+      ]
+    },
+    "external-dns-operator": {
+      "module": "github.com/openshift/external-dns-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cloud-credential-operator"
+      ]
+    },
+    "aws-efs-csi-driver-operator": {
+      "module": "github.com/openshift/aws-efs-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "alibaba-disk-csi-driver-operator": {
+      "module": "github.com/openshift/alibaba-disk-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "cluster-api-provider-alibaba": {
+      "module": "github.com/openshift/cluster-api-provider-alibaba",
+      "depends_on": [
+        "openshift/api",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "must-gather-clean": {
+      "module": "github.com/openshift/must-gather-clean",
+      "depends_on": [
+        "openshift/build-machinery-go"
+      ]
+    },
+    "ibm-vpc-block-csi-driver-operator": {
+      "module": "github.com/openshift/ibm-vpc-block-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "image-customization-controller": {
+      "module": "github.com/openshift/image-customization-controller",
+      "depends_on": [
+        "openshift/assisted-image-service"
+      ]
+    },
+    "openstack-test": {
+      "module": "github.com/openshift/openstack-test",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cluster-api-actuator-pkg",
+        "openshift/library-go",
+        "openshift/origin"
+      ]
+    },
+    "azure-file-csi-driver-operator": {
+      "module": "github.com/openshift/azure-file-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "dpu-network-operator": {
+      "module": "github.com/openshift/dpu-network-operator",
+      "depends_on": [
+        "openshift/cluster-network-operator",
+        "openshift/machine-config-operator"
+      ]
+    },
+    "machine-api-provider-openstack": {
+      "module": "github.com/openshift/machine-api-provider-openstack",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "cluster-capi-operator": {
+      "module": "github.com/openshift/cluster-capi-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cluster-api-actuator-pkg/testutils",
+        "openshift/cluster-capi-operator/manifests-gen",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "machine-api-provider-aws": {
+      "module": "github.com/openshift/machine-api-provider-aws",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "machine-api-provider-azure": {
+      "module": "github.com/openshift/machine-api-provider-azure",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "machine-api-provider-gcp": {
+      "module": "github.com/openshift/machine-api-provider-gcp",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cluster-api-actuator-pkg/testutils",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "lvm-operator": {
+      "module": "github.com/openshift/lvm-operator/v4",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "ocm-agent-operator": {
+      "module": "github.com/openshift/ocm-agent-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/operator-custom-metrics",
+        "openshift/osde2e-common"
+      ]
+    },
+    "ocm-agent": {
+      "module": "github.com/openshift/ocm-agent",
+      "depends_on": [
+        "openshift/api",
+        "openshift/ocm-agent-operator"
+      ]
+    },
+    "machine-api-provider-powervs": {
+      "module": "github.com/openshift/machine-api-provider-powervs",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "configuration-anomaly-detection": {
+      "module": "github.com/openshift/configuration-anomaly-detection",
+      "depends_on": [
+        "openshift/api",
+        "openshift/aws-account-operator/api",
+        "openshift/backplane-api",
+        "openshift/backplane-cli",
+        "openshift/hive/apis",
+        "openshift/osd-network-verifier",
+        "openshift/osde2e-common"
+      ]
+    },
+    "machine-api-provider-nutanix": {
+      "module": "github.com/openshift/machine-api-provider-nutanix",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "aws-load-balancer-operator": {
+      "module": "github.com/openshift/aws-load-balancer-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/cloud-credential-operator"
+      ]
+    },
+    "node-observability-operator": {
+      "module": "github.com/openshift/node-observability-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/machine-config-operator"
+      ]
+    },
+    "node-observability-agent": {
+      "module": "github.com/openshift/node-observability-agent",
+      "depends_on": [
+        "openshift/build-machinery-go"
+      ]
+    },
+    "cluster-control-plane-machine-set-operator": {
+      "module": "github.com/openshift/cluster-control-plane-machine-set-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/cluster-api-actuator-pkg/testutils",
+        "openshift/controller-runtime-common",
+        "openshift/library-go"
+      ]
+    },
+    "aws-vpce-operator": {
+      "module": "github.com/openshift/aws-vpce-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/aws-account-operator/api",
+        "openshift/hypershift/api"
+      ]
+    },
+    "gcp-filestore-csi-driver-operator": {
+      "module": "github.com/openshift/gcp-filestore-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "machine-api-provider-ibmcloud": {
+      "module": "github.com/openshift/machine-api-provider-ibmcloud",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go",
+        "openshift/machine-api-operator"
+      ]
+    },
+    "ibm-powervs-block-csi-driver-operator": {
+      "module": "github.com/openshift/ibm-powervs-block-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "platform-operators": {
+      "module": "github.com/openshift/platform-operators",
+      "depends_on": [
+        "openshift/api"
+      ]
+    },
+    "cli-manager": {
+      "module": "github.com/openshift/cli-manager",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "route-controller-manager": {
+      "module": "github.com/openshift/route-controller-manager",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "run-once-duration-override": {
+      "module": "github.com/openshift/run-once-duration-override",
+      "depends_on": [
+        "openshift/build-machinery-go",
+        "openshift/generic-admission-server",
+        "openshift/library-go"
+      ]
+    },
+    "installer-aro-wrapper": {
+      "module": "github.com/openshift/installer-aro-wrapper",
+      "depends_on": [
+        "openshift/api",
+        "openshift/assisted-service/api",
+        "openshift/assisted-service/client",
+        "openshift/assisted-service/models",
+        "openshift/client-go",
+        "openshift/installer"
+      ]
+    },
+    "run-once-duration-override-operator": {
+      "module": "github.com/openshift/run-once-duration-override-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "secrets-store-csi-driver-operator": {
+      "module": "github.com/openshift/secrets-store-csi-driver-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "backplane-cli": {
+      "module": "github.com/openshift/backplane-cli",
+      "depends_on": [
+        "openshift/backplane-api",
+        "openshift/client-go"
+      ]
+    },
+    "appliance": {
+      "module": "github.com/openshift/appliance",
+      "depends_on": [
+        "openshift/api",
+        "openshift/assisted-image-service",
+        "openshift/assisted-service/api",
+        "openshift/assisted-service/models",
+        "openshift/hive/apis",
+        "openshift/installer",
+        "openshift/machine-config-operator"
+      ]
+    },
+    "console-dashboards-plugin": {
+      "module": "github.com/openshift/console-dashboards-plugin",
+      "depends_on": [
+        "openshift/library-go"
+      ]
+    },
+    "crd-schema-checker": {
+      "module": "github.com/openshift/crd-schema-checker",
+      "depends_on": [
+        "openshift/build-machinery-go",
+        "openshift/generic-admission-server"
+      ]
+    },
+    "osde2e-common": {
+      "module": "github.com/openshift/osde2e-common",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "coredns-ocp-dnsnameresolver": {
+      "module": "github.com/openshift/coredns-ocp-dnsnameresolver",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "check-payload": {
+      "module": "github.com/openshift/check-payload",
+      "depends_on": [
+        "openshift/api",
+        "openshift/oc"
+      ]
+    },
+    "cluster-api-provider-openshift": {
+      "module": "github.com/openshift/cluster-api-provider-openshift",
+      "depends_on": [
+        "openshift/api/tools"
+      ]
+    },
+    "cluster-olm-operator": {
+      "module": "github.com/openshift/cluster-olm-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "image-based-install-operator": {
+      "module": "github.com/openshift/image-based-install-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/assisted-service/api",
+        "openshift/assisted-service/client",
+        "openshift/assisted-service/models",
+        "openshift/client-go",
+        "openshift/controller-runtime-common",
+        "openshift/hive/apis",
+        "openshift/installer",
+        "openshift/library-go"
+      ]
+    },
+    "lightspeed-operator": {
+      "module": "github.com/openshift/lightspeed-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "dpu-operator": {
+      "module": "github.com/openshift/dpu-operator",
+      "depends_on": [
+        "openshift/dpu-operator/api",
+        "openshift/dpu-operator/dpu-api"
+      ]
+    },
+    "cli-manager-operator": {
+      "module": "github.com/openshift/cli-manager-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/cli-manager",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "multi-operator-manager": {
+      "module": "github.com/openshift/multi-operator-manager",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "observability-ui-operator": {
+      "module": "github.com/openshift/observability-ui-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "cluster-health-analyzer": {
+      "module": "github.com/openshift/cluster-health-analyzer",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go"
+      ]
+    },
+    "instaslice-operator": {
+      "module": "github.com/openshift/instaslice-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "lws-operator": {
+      "module": "github.com/openshift/lws-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "hypershift-oadp-plugin": {
+      "module": "github.com/openshift/hypershift-oadp-plugin",
+      "depends_on": [
+        "openshift/hive/apis",
+        "openshift/hypershift/api"
+      ]
+    },
+    "jobset-operator": {
+      "module": "github.com/openshift/jobset-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/library-go"
+      ]
+    },
+    "kueue-operator": {
+      "module": "github.com/openshift/kueue-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go",
+        "openshift/jobset-operator",
+        "openshift/library-go",
+        "openshift/lws-operator"
+      ]
+    },
+    "zero-trust-workload-identity-manager": {
+      "module": "github.com/openshift/zero-trust-workload-identity-manager",
+      "depends_on": [
+        "openshift/api",
+        "openshift/build-machinery-go",
+        "openshift/client-go"
+      ]
+    },
+    "tls-scanner": {
+      "module": "github.com/openshift/tls-scanner",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "oadp-must-gather": {
+      "module": "github.com/openshift/oadp-must-gather",
+      "depends_on": [
+        "openshift/api",
+        "openshift/oadp-operator",
+        "openshift/oc"
+      ]
+    },
+    "controller-runtime-common": {
+      "module": "github.com/openshift/controller-runtime-common",
+      "depends_on": [
+        "openshift/api",
+        "openshift/library-go"
+      ]
+    },
+    "vcf-migration-operator": {
+      "module": "github.com/openshift/vcf-migration-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "lightspeed-agentic-operator": {
+      "module": "github.com/openshift/lightspeed-agentic-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/lightspeed-agentic-operator/api"
+      ]
+    },
+    "karpenter-operator": {
+      "module": "github.com/openshift/karpenter-operator",
+      "depends_on": [
+        "openshift/api",
+        "openshift/client-go"
+      ]
+    },
+    "lightspeed-agentic-alerts-adapter": {
+      "module": "github.com/openshift/lightspeed-agentic-alerts-adapter",
+      "depends_on": [
+        "openshift/lightspeed-agentic-operator/api"
+      ]
+    }
+  },
+  "key_project_dependents": {
+    "openshift/api": [
+      "addon-operator",
+      "alibaba-disk-csi-driver-operator",
+      "apiserver-library-go",
+      "appliance",
+      "assisted-installer",
+      "assisted-service",
+      "aws-account-operator",
+      "aws-ebs-csi-driver-operator",
+      "aws-efs-csi-driver-operator",
+      "aws-efs-operator",
+      "aws-load-balancer-operator",
+      "aws-vpce-operator",
+      "azure-disk-csi-driver-operator",
+      "azure-file-csi-driver-operator",
+      "baremetal-runtimecfg",
+      "bugzilla-tools",
+      "builder",
+      "cert-manager-operator",
+      "certman-operator",
+      "check-payload",
+      "ci-chat-bot",
+      "ci-tools",
+      "cincinnati-operator",
+      "cli-manager",
+      "cli-manager-operator",
+      "cloud-credential-operator",
+      "cloud-ingress-operator",
+      "cloud-network-config-controller",
+      "cluster-api-actuator-pkg",
+      "cluster-api-provider-alibaba",
+      "cluster-api-provider-libvirt",
+      "cluster-authentication-operator",
+      "cluster-autoscaler-operator",
+      "cluster-baremetal-operator",
+      "cluster-capi-operator",
+      "cluster-cloud-controller-manager-operator",
+      "cluster-config-operator",
+      "cluster-control-plane-machine-set-operator",
+      "cluster-csi-snapshot-controller-operator",
+      "cluster-debug-tools",
+      "cluster-dns-operator",
+      "cluster-etcd-operator",
+      "cluster-health-analyzer",
+      "cluster-image-registry-operator",
+      "cluster-ingress-operator",
+      "cluster-kube-apiserver-operator",
+      "cluster-kube-controller-manager-operator",
+      "cluster-kube-descheduler-operator",
+      "cluster-kube-scheduler-operator",
+      "cluster-kube-storage-version-migrator-operator",
+      "cluster-logging-operator",
+      "cluster-machine-approver",
+      "cluster-monitoring-operator",
+      "cluster-network-operator",
+      "cluster-nfd-operator",
+      "cluster-node-tuning-operator",
+      "cluster-olm-operator",
+      "cluster-openshift-apiserver-operator",
+      "cluster-openshift-controller-manager-operator",
+      "cluster-policy-controller",
+      "cluster-resource-override-admission-operator",
+      "cluster-samples-operator",
+      "cluster-storage-operator",
+      "cluster-svcat-apiserver-operator",
+      "cluster-version-operator",
+      "compliance-operator",
+      "configuration-anomaly-detection",
+      "configure-alertmanager-operator",
+      "console-operator",
+      "controller-runtime-common",
+      "coredns-ocp-dnsnameresolver",
+      "csi-driver-manila-operator",
+      "csi-driver-shared-resource",
+      "csi-driver-shared-resource-operator",
+      "csi-operator",
+      "deadmanssnitch-operator",
+      "elasticsearch-operator",
+      "elasticsearch-proxy",
+      "external-dns-operator",
+      "file-integrity-operator",
+      "gcp-filestore-csi-driver-operator",
+      "gcp-pd-csi-driver-operator",
+      "hive",
+      "hypershift",
+      "ibm-powervs-block-csi-driver-operator",
+      "ibm-roks-toolkit",
+      "ibm-vpc-block-csi-driver-operator",
+      "image-based-install-operator",
+      "image-registry",
+      "insights-operator",
+      "installer",
+      "installer-aro-wrapper",
+      "instaslice-operator",
+      "jobset-operator",
+      "karpenter-operator",
+      "kubevirt-csi-driver-operator",
+      "kueue-operator",
+      "library",
+      "library-go",
+      "lightspeed-agentic-operator",
+      "lightspeed-operator",
+      "local-storage-operator",
+      "lvm-operator",
+      "lws-operator",
+      "machine-api-operator",
+      "machine-api-provider-aws",
+      "machine-api-provider-azure",
+      "machine-api-provider-gcp",
+      "machine-api-provider-ibmcloud",
+      "machine-api-provider-nutanix",
+      "machine-api-provider-openstack",
+      "machine-api-provider-powervs",
+      "machine-config-operator",
+      "managed-cluster-validating-webhooks",
+      "managed-upgrade-operator",
+      "managed-velero-operator",
+      "microshift",
+      "multi-operator-manager",
+      "must-gather-operator",
+      "node-observability-operator",
+      "oadp-must-gather",
+      "oadp-operator",
+      "oauth-apiserver",
+      "oauth-server",
+      "observability-ui-operator",
+      "oc",
+      "oc-mirror",
+      "ocm-agent",
+      "ocm-agent-operator",
+      "openshift-apiserver",
+      "openshift-controller-manager",
+      "openshift-state-metrics",
+      "openshift-velero-plugin",
+      "openstack-cinder-csi-driver-operator",
+      "openstack-test",
+      "operator-framework-olm",
+      "origin",
+      "osd-metrics-exporter",
+      "osdctl",
+      "osde2e",
+      "osde2e-common",
+      "pagerduty-operator",
+      "platform-operators",
+      "ptp-operator",
+      "release-controller",
+      "route-controller-manager",
+      "route-monitor-operator",
+      "router",
+      "run-once-duration-override-operator",
+      "runtime-utils",
+      "sandboxed-containers-operator",
+      "sdn",
+      "secondary-scheduler-operator",
+      "secrets-store-csi-driver-operator",
+      "service-ca-operator",
+      "special-resource-operator",
+      "splunk-forwarder-operator",
+      "sriov-network-operator",
+      "tls-scanner",
+      "vcf-migration-operator",
+      "vertical-pod-autoscaler-operator",
+      "vmware-vsphere-csi-driver-operator",
+      "vsphere-problem-detector",
+      "windows-machine-config-operator",
+      "zero-trust-workload-identity-manager"
+    ],
+    "openshift/client-go": [
+      "alibaba-disk-csi-driver-operator",
+      "apiserver-library-go",
+      "assisted-installer",
+      "assisted-service",
+      "aws-ebs-csi-driver-operator",
+      "aws-efs-csi-driver-operator",
+      "azure-disk-csi-driver-operator",
+      "azure-file-csi-driver-operator",
+      "backplane-cli",
+      "bugzilla-tools",
+      "builder",
+      "cert-manager-operator",
+      "certman-operator",
+      "ci-chat-bot",
+      "ci-tools",
+      "cli-manager",
+      "cli-manager-operator",
+      "cloud-credential-operator",
+      "cloud-network-config-controller",
+      "cluster-api-provider-libvirt",
+      "cluster-authentication-operator",
+      "cluster-autoscaler-operator",
+      "cluster-baremetal-operator",
+      "cluster-bootstrap",
+      "cluster-capi-operator",
+      "cluster-cloud-controller-manager-operator",
+      "cluster-config-operator",
+      "cluster-control-plane-machine-set-operator",
+      "cluster-csi-snapshot-controller-operator",
+      "cluster-dns-operator",
+      "cluster-etcd-operator",
+      "cluster-image-registry-operator",
+      "cluster-ingress-operator",
+      "cluster-kube-apiserver-operator",
+      "cluster-kube-controller-manager-operator",
+      "cluster-kube-descheduler-operator",
+      "cluster-kube-scheduler-operator",
+      "cluster-kube-storage-version-migrator-operator",
+      "cluster-machine-approver",
+      "cluster-monitoring-operator",
+      "cluster-network-operator",
+      "cluster-nfd-operator",
+      "cluster-node-tuning-operator",
+      "cluster-olm-operator",
+      "cluster-openshift-apiserver-operator",
+      "cluster-openshift-controller-manager-operator",
+      "cluster-policy-controller",
+      "cluster-samples-operator",
+      "cluster-storage-operator",
+      "cluster-svcat-apiserver-operator",
+      "cluster-version-operator",
+      "console-operator",
+      "coredns-ocp-dnsnameresolver",
+      "csi-driver-manila-operator",
+      "csi-driver-shared-resource",
+      "csi-driver-shared-resource-operator",
+      "csi-operator",
+      "elasticsearch-proxy",
+      "gcp-filestore-csi-driver-operator",
+      "gcp-pd-csi-driver-operator",
+      "hive",
+      "hypershift",
+      "ibm-powervs-block-csi-driver-operator",
+      "ibm-roks-toolkit",
+      "ibm-vpc-block-csi-driver-operator",
+      "image-based-install-operator",
+      "image-registry",
+      "insights-operator",
+      "installer",
+      "installer-aro-wrapper",
+      "instaslice-operator",
+      "jobset-operator",
+      "karpenter-operator",
+      "kueue-operator",
+      "library-go",
+      "lightspeed-operator",
+      "local-storage-operator",
+      "lvm-operator",
+      "lws-operator",
+      "machine-api-operator",
+      "machine-api-provider-openstack",
+      "machine-config-operator",
+      "managed-upgrade-operator",
+      "microshift",
+      "multi-operator-manager",
+      "oauth-apiserver",
+      "oauth-server",
+      "observability-ui-operator",
+      "oc",
+      "openshift-apiserver",
+      "openshift-controller-manager",
+      "openshift-state-metrics",
+      "openshift-velero-plugin",
+      "openstack-cinder-csi-driver-operator",
+      "openstack-test",
+      "origin",
+      "osde2e",
+      "osde2e-common",
+      "ptp-operator",
+      "release-controller",
+      "route-controller-manager",
+      "router",
+      "run-once-duration-override-operator",
+      "sdn",
+      "secondary-scheduler-operator",
+      "secrets-store-csi-driver-operator",
+      "service-ca-operator",
+      "special-resource-operator",
+      "sriov-network-operator",
+      "sriov-tests",
+      "tls-scanner",
+      "vcf-migration-operator",
+      "vertical-pod-autoscaler-operator",
+      "vmware-vsphere-csi-driver-operator",
+      "vsphere-problem-detector",
+      "windows-machine-config-operator",
+      "zero-trust-workload-identity-manager"
+    ],
+    "openshift/library-go": [
+      "alibaba-disk-csi-driver-operator",
+      "apiserver-library-go",
+      "assisted-service",
+      "aws-ebs-csi-driver-operator",
+      "aws-efs-csi-driver-operator",
+      "azure-disk-csi-driver-operator",
+      "azure-file-csi-driver-operator",
+      "bugzilla-tools",
+      "builder",
+      "cert-manager-operator",
+      "ci-search",
+      "ci-tools",
+      "cincinnati-operator",
+      "cli-manager",
+      "cli-manager-operator",
+      "cloud-credential-operator",
+      "cloud-network-config-controller",
+      "cluster-api-actuator-pkg",
+      "cluster-authentication-operator",
+      "cluster-autoscaler-operator",
+      "cluster-baremetal-operator",
+      "cluster-bootstrap",
+      "cluster-capi-operator",
+      "cluster-cloud-controller-manager-operator",
+      "cluster-config-operator",
+      "cluster-control-plane-machine-set-operator",
+      "cluster-csi-snapshot-controller-operator",
+      "cluster-debug-tools",
+      "cluster-dns-operator",
+      "cluster-etcd-operator",
+      "cluster-health-analyzer",
+      "cluster-image-registry-operator",
+      "cluster-ingress-operator",
+      "cluster-kube-apiserver-operator",
+      "cluster-kube-controller-manager-operator",
+      "cluster-kube-descheduler-operator",
+      "cluster-kube-scheduler-operator",
+      "cluster-kube-storage-version-migrator-operator",
+      "cluster-machine-approver",
+      "cluster-monitoring-operator",
+      "cluster-network-operator",
+      "cluster-node-tuning-operator",
+      "cluster-olm-operator",
+      "cluster-openshift-apiserver-operator",
+      "cluster-openshift-controller-manager-operator",
+      "cluster-policy-controller",
+      "cluster-samples-operator",
+      "cluster-storage-operator",
+      "cluster-version-operator",
+      "compliance-operator",
+      "console-dashboards-plugin",
+      "console-operator",
+      "controller-runtime-common",
+      "csi-driver-manila-operator",
+      "csi-driver-shared-resource-operator",
+      "csi-operator",
+      "file-integrity-operator",
+      "gcp-filestore-csi-driver-operator",
+      "gcp-pd-csi-driver-operator",
+      "hive",
+      "hypershift",
+      "ibm-powervs-block-csi-driver-operator",
+      "ibm-roks-toolkit",
+      "ibm-vpc-block-csi-driver-operator",
+      "image-based-install-operator",
+      "image-registry",
+      "insights-operator",
+      "installer",
+      "instaslice-operator",
+      "jobset-operator",
+      "kubevirt-csi-driver-operator",
+      "kueue-operator",
+      "local-storage-operator",
+      "lvm-operator",
+      "lws-operator",
+      "machine-api-operator",
+      "machine-api-provider-aws",
+      "machine-api-provider-azure",
+      "machine-api-provider-gcp",
+      "machine-api-provider-ibmcloud",
+      "machine-api-provider-nutanix",
+      "machine-api-provider-openstack",
+      "machine-api-provider-powervs",
+      "machine-config-operator",
+      "managed-upgrade-operator",
+      "microshift",
+      "multi-operator-manager",
+      "oauth-apiserver",
+      "oauth-server",
+      "oc",
+      "openshift-apiserver",
+      "openshift-controller-manager",
+      "openshift-velero-plugin",
+      "openstack-cinder-csi-driver-operator",
+      "openstack-test",
+      "origin",
+      "osde2e-common",
+      "ptp-operator",
+      "release-controller",
+      "route-controller-manager",
+      "router",
+      "run-once-duration-override",
+      "run-once-duration-override-operator",
+      "sdn",
+      "secondary-scheduler-operator",
+      "secrets-store-csi-driver-operator",
+      "service-ca-operator",
+      "special-resource-operator",
+      "vertical-pod-autoscaler-operator",
+      "vmware-vsphere-csi-driver-operator",
+      "vsphere-problem-detector",
+      "windows-machine-config-operator"
+    ]
+  }
+}

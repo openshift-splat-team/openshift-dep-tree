@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OpenShift Dependency Map</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: sans-serif; margin: 0; display: flex; height: 100vh; overflow: hidden; }
+  #sidebar { width: 340px; min-width: 200px; display: flex; flex-direction: column; border-right: 1px solid #ccc; }
+  #sidebar-top { padding: 10px 12px 6px; }
+  #sidebar-top h2 { margin: 0 0 6px; font-size: 1rem; }
+  #list-wrap { flex: 1; overflow-y: auto; padding: 0 8px 8px; }
+  #main { flex: 1; overflow: auto; padding: 14px; }
+  input[type=search] { width: 100%; padding: 6px; margin-bottom: 6px; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li.entry { padding: 4px 6px; cursor: pointer; border-radius: 4px; font-size: 0.82rem; display: flex; align-items: center; justify-content: space-between; }
+  li.entry:hover { background: #e8f0fe; }
+  li.entry.selected { background: #d0e4ff; font-weight: bold; }
+  .badge { background: #e0e0e0; border-radius: 10px; padding: 1px 7px; font-size: 0.72rem; white-space: nowrap; }
+  .badge.high { background: #f28b82; }
+  .badge.mid { background: #fbbc04; }
+  .badge.low { background: #81c995; }
+  #tabs { display: flex; gap: 4px; margin-bottom: 8px; flex-wrap: wrap; }
+  .tab { padding: 4px 10px; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+  .tab.active { background: #1a73e8; color: white; border-color: #1a73e8; }
+  #detail { background: #f8f9fa; border-radius: 6px; padding: 12px 14px; }
+  #detail h3 { margin: 0 0 4px; font-size: 0.95rem; }
+  #detail .mod { color: #555; font-size: 0.8rem; margin-bottom: 10px; }
+  #detail section { margin-bottom: 12px; }
+  #detail section h4 { margin: 0 0 4px; font-size: 0.82rem; color: #333; text-transform: uppercase; letter-spacing: .04em; }
+  .pkg-row { margin-bottom: 8px; }
+  .pkg-name { font-weight: 600; font-size: 0.82rem; color: #1a73e8; }
+  .kinds { font-size: 0.78rem; color: #555; margin-left: 4px; }
+  .repo-chip { display: inline-block; background: #e8f0fe; border-radius: 3px; padding: 1px 5px; margin: 2px; font-size: 0.75rem; }
+  .svg-wrap { border: 1px solid #eee; border-radius: 6px; overflow: auto; margin-top: 12px; }
+  .hint { color: #888; font-size: 0.85rem; }
+  #search-wrap { display: flex; gap: 4px; }
+  #view-toggle { display: flex; gap: 4px; margin-bottom: 10px; }
+  .vt { padding: 3px 10px; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+  .vt.active { background: #34a853; color: white; border-color: #34a853; }
+  #detail table { border-collapse: collapse; width: 100%; font-size: 0.82rem; }
+  #detail table th { background: #f0f0f0; text-align: left; padding: 4px 8px; }
+  #detail table td { padding: 4px 8px; border-bottom: 1px solid #eee; }
+  #detail table tr.result-row:hover { background: #f0f4ff; cursor: pointer; }
+  .meta-desc { font-size: 0.82rem; color: #444; margin: 0 0 10px; font-style: italic; }
+  .chip { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.78rem; margin: 2px; }
+  .chip.platform { background: #e6f4ea; color: #1e6b38; }
+  .chip.cls { background: #e8eaf6; color: #3949ab; }
+  .chip.fork { background: #fce8e6; color: #c62828; }
+  .chip.upstream { background: #fff3e0; color: #e65100; }
+  #impact-form { padding: 8px; }
+  #impact-form label { font-size: 0.8rem; font-weight: 600; display: block; margin-bottom: 4px; }
+  #impact-form textarea, #impact-form input[type=text] { width: 100%; padding: 5px; font-size: 0.8rem; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box; }
+  #impact-run { margin-top: 8px; padding: 6px 14px; background: #1a73e8; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.82rem; }
+  #impact-run:hover { background: #1557b0; }
+</style>
+</head>
+<body>
+<div id="sidebar">
+  <div id="sidebar-top">
+    <h2>OpenShift Dependency Map</h2>
+    <div id="tabs">
+      <div class="tab active" data-tab="repos">Repos</div>
+      <div class="tab" data-tab="packages">API Packages</div>
+      <div class="tab" data-tab="kinds">CRD Kinds</div>
+      <div class="tab" data-tab="modules">go.mod</div>
+      <div class="tab" data-tab="impact">Feature Impact</div>
+    </div>
+    <input id="search" type="search" placeholder="Filter…">
+  </div>
+  <div id="list-wrap">
+    <ul id="list"></ul>
+    <div id="impact-form" style="display:none">
+      <div style="margin-bottom:8px">
+        <label for="impact-feature">Feature Description</label>
+        <textarea id="impact-feature" rows="3" placeholder="e.g. dual stack IPv6 networking support..."></textarea>
+      </div>
+      <div style="margin-bottom:8px">
+        <label for="impact-platform">Platforms (comma-separated, optional)</label>
+        <input id="impact-platform" type="text" placeholder="aws, azure, gcp, vsphere…">
+      </div>
+      <div style="margin-bottom:8px">
+        <label for="impact-class">Classification (comma-separated, optional)</label>
+        <input id="impact-class" type="text" placeholder="networking, storage, installation…">
+      </div>
+      <button id="impact-run">Analyze</button>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div id="view-toggle">
+    <div class="vt active" data-v="detail">Detail</div>
+    <div class="vt" data-v="svg">Module Graph (SVG)</div>
+  </div>
+  <div id="view-detail">
+    <p class="hint" id="hint">Select an item from the left panel to see details.</p>
+    <div id="detail" style="display:none"></div>
+  </div>
+  <div id="view-svg" style="display:none">
+    <p class="hint">Repos that depend on openshift/api, client-go, or library-go (via go.mod).</p>
+    <div class="svg-wrap"><img src="graph_key.svg" style="max-width:100%;display:block" alt="dependency graph"></div>
+  </div>
+</div>
+
+<script>
+let graph = null, apiUsage = null, repoMeta = null;
+let activeTab = 'repos', activeView = 'detail';
+
+Promise.all([
+  fetch('graph.json').then(r => r.json()).catch(() => null),
+  fetch('api_usage.json').then(r => r.json()).catch(() => null),
+  fetch('repo_metadata.json').then(r => r.json()).catch(() => null),
+]).then(([g, a, m]) => {
+  graph = g;
+  apiUsage = a;
+  repoMeta = m;
+  renderList(activeTab);
+}).catch(() => {
+  document.getElementById('hint').textContent = 'Could not load graph.json / api_usage.json';
+});
+
+// Tab switching
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    activeTab = t.dataset.tab;
+    const isImpact = activeTab === 'impact';
+    document.getElementById('list').style.display = isImpact ? 'none' : '';
+    document.getElementById('search').style.display = isImpact ? 'none' : '';
+    document.getElementById('impact-form').style.display = isImpact ? '' : 'none';
+    if (!isImpact) renderList(activeTab);
+  });
+});
+
+document.getElementById('impact-run').addEventListener('click', runImpactAnalysis);
+
+// View toggle
+document.querySelectorAll('.vt').forEach(v => {
+  v.addEventListener('click', () => {
+    document.querySelectorAll('.vt').forEach(x => x.classList.remove('active'));
+    v.classList.add('active');
+    activeView = v.dataset.v;
+    document.getElementById('view-detail').style.display = activeView === 'detail' ? '' : 'none';
+    document.getElementById('view-svg').style.display = activeView === 'svg' ? '' : 'none';
+  });
+});
+
+document.getElementById('search').addEventListener('input', () => renderList(activeTab));
+
+// ---- helpers ----
+function buildRev() {
+  if (!graph) return {};
+  const rev = {};
+  for (const [repo, info] of Object.entries(graph.graph)) {
+    for (const dep of (info.depends_on || [])) {
+      if (!rev[dep]) rev[dep] = [];
+      rev[dep].push(repo);
+    }
+  }
+  return rev;
+}
+
+function buildKindToRepos() {
+  if (!apiUsage) return {};
+  const m = {};
+  for (const [repo, info] of Object.entries(apiUsage.repo_usage || {})) {
+    for (const k of (info.kinds || [])) {
+      if (!m[k]) m[k] = [];
+      m[k].push(repo);
+    }
+  }
+  return m;
+}
+
+// ---- render list ----
+function renderList(tab) {
+  const q = document.getElementById('search').value.toLowerCase();
+  const ul = document.getElementById('list');
+  ul.innerHTML = '';
+
+  if (tab === 'repos') {
+    const repos = Object.keys(apiUsage?.repo_usage || graph?.graph || {})
+      .filter(r => !q || r.toLowerCase().includes(q))
+      .sort();
+    repos.forEach(repo => {
+      const apiPkgs = apiUsage?.repo_usage?.[repo]?.packages?.length || 0;
+      const goModDeps = graph?.graph?.[repo]?.depends_on?.length || 0;
+      const li = makeItem(repo, `${apiPkgs} API pkgs · ${goModDeps} go.mod`, apiPkgs);
+      li.addEventListener('click', () => selectRepo(repo, li));
+      ul.appendChild(li);
+    });
+
+  } else if (tab === 'packages') {
+    const pkgCounts = {};
+    for (const info of Object.values(apiUsage?.repo_usage || {})) {
+      for (const p of (info.packages || [])) { pkgCounts[p] = (pkgCounts[p] || 0) + 1; }
+    }
+    const pkgs = Object.keys(pkgCounts)
+      .filter(p => !q || p.toLowerCase().includes(q))
+      .sort((a, b) => pkgCounts[b] - pkgCounts[a]);
+    pkgs.forEach(pkg => {
+      const li = makeItem(pkg, `${pkgCounts[pkg]} repos`, pkgCounts[pkg]);
+      li.addEventListener('click', () => selectPackage(pkg, li));
+      ul.appendChild(li);
+    });
+
+  } else if (tab === 'kinds') {
+    const k2r = buildKindToRepos();
+    const kinds = Object.keys(k2r)
+      .filter(k => !q || k.toLowerCase().includes(q))
+      .sort((a, b) => k2r[b].length - k2r[a].length);
+    kinds.forEach(kind => {
+      const li = makeItem(kind, `${k2r[kind].length} repos`, k2r[kind].length);
+      li.addEventListener('click', () => selectKind(kind, li));
+      ul.appendChild(li);
+    });
+
+  } else { // modules (go.mod deps)
+    const rev = buildRev();
+    const mods = Object.keys(rev)
+      .filter(m => !q || m.toLowerCase().includes(q))
+      .sort((a, b) => rev[b].length - rev[a].length);
+    mods.slice(0, 80).forEach(mod => {
+      const li = makeItem(mod, `${rev[mod].length} repos`, rev[mod].length);
+      li.addEventListener('click', () => selectModule(mod, li));
+      ul.appendChild(li);
+    });
+  }
+}
+
+function makeItem(label, sub, count) {
+  const li = document.createElement('li');
+  li.className = 'entry';
+  const span = document.createElement('span');
+  span.textContent = label;
+  span.style.overflow = 'hidden';
+  span.style.textOverflow = 'ellipsis';
+  span.style.whiteSpace = 'nowrap';
+  const badge = document.createElement('span');
+  badge.className = 'badge' + (count >= 50 ? ' high' : count >= 15 ? ' mid' : count >= 5 ? ' low' : '');
+  badge.textContent = sub;
+  li.appendChild(span);
+  li.appendChild(badge);
+  return li;
+}
+
+function clearSelected() {
+  document.querySelectorAll('#list li.selected').forEach(x => x.classList.remove('selected'));
+}
+
+// ---- selection handlers ----
+function showRepoDetail(repo) {
+  const det = document.getElementById('detail');
+  det.style.display = '';
+  document.getElementById('hint').style.display = 'none';
+
+  const apiInfo = apiUsage?.repo_usage?.[repo] || {};
+  const modInfo = graph?.graph?.[repo] || {};
+  const meta = repoMeta?.repos?.[repo] || null;
+  const pkgs = apiInfo.packages || [];
+  const pkgDefs = apiUsage?.packages || {};
+
+  // Metadata section
+  let metaHtml = '';
+  if (meta) {
+    const descHtml = meta.summary ? `<p class="meta-desc">${meta.summary}</p>` : '';
+    const platformsHtml = (meta.platforms || []).length
+      ? meta.platforms.map(p => `<span class="chip platform">${p}</span>`).join('')
+      : '<em>none detected</em>';
+    const clsHtml = (meta.classifications || []).length
+      ? meta.classifications.map(c => `<span class="chip cls">${c}</span>`).join('')
+      : '<em>none detected</em>';
+    let forkHtml;
+    if (meta.upstream) {
+      forkHtml = `<span class="chip upstream">Fork of <a href="https://github.com/${meta.upstream}" target="_blank">${meta.upstream}</a></span>`;
+    } else if (meta.fork) {
+      forkHtml = `<span class="chip fork">Fork (upstream unknown)</span>`;
+    } else {
+      forkHtml = `<span class="chip">Original</span>`;
+    }
+    metaHtml = `${descHtml}
+    <section>
+      <h4>Platforms</h4>
+      <div>${platformsHtml}</div>
+    </section>
+    <section>
+      <h4>Classification</h4>
+      <div>${clsHtml}</div>
+    </section>
+    <section>
+      <h4>Upstream</h4>
+      <div>${forkHtml}</div>
+    </section>`;
+  }
+
+  const pkgHtml = pkgs.map(pkg => {
+    const kinds = pkgDefs[pkg]?.kinds || [];
+    return `<div class="pkg-row">
+      <span class="pkg-name">openshift/api/${pkg}</span>
+      <span class="kinds">${kinds.join(', ') || '—'}</span>
+    </div>`;
+  }).join('');
+
+  const goModDeps = (modInfo.depends_on || [])
+    .map(d => `<span class="repo-chip">${d}</span>`).join('');
+
+  det.innerHTML = `
+    <h3>${repo}</h3>
+    <div class="mod">${modInfo.module || ''}</div>
+    ${metaHtml}
+    <section>
+      <h4>openshift/api packages (${pkgs.length})</h4>
+      ${pkgHtml || '<em>none detected</em>'}
+    </section>
+    <section>
+      <h4>All CRD kinds referenced (${(apiInfo.kinds || []).length})</h4>
+      <div>${(apiInfo.kinds || []).map(k => `<span class="repo-chip">${k}</span>`).join('')}</div>
+    </section>
+    <section>
+      <h4>go.mod openshift/* deps (${(modInfo.depends_on || []).length})</h4>
+      <div>${goModDeps || '<em>none</em>'}</div>
+    </section>`;
+}
+
+function selectRepo(repo, li) {
+  clearSelected(); li.classList.add('selected');
+  showRepoDetail(repo);
+}
+
+function selectPackage(pkg, li) {
+  clearSelected(); li.classList.add('selected');
+  const det = document.getElementById('detail');
+  det.style.display = '';
+  document.getElementById('hint').style.display = 'none';
+
+  const pkgDef = apiUsage?.packages?.[pkg] || {};
+  const dependents = Object.entries(apiUsage?.repo_usage || {})
+    .filter(([, info]) => (info.packages || []).includes(pkg))
+    .map(([r]) => r).sort();
+
+  det.innerHTML = `
+    <h3>openshift/api/${pkg}</h3>
+    <div class="mod">${pkgDef.module_path || ''}</div>
+    <section>
+      <h4>Kinds defined (${(pkgDef.kinds || []).length})</h4>
+      <div>${(pkgDef.kinds || []).map(k => `<span class="repo-chip">${k}</span>`).join('')}</div>
+    </section>
+    <section>
+      <h4>Used by ${dependents.length} repos</h4>
+      <div style="max-height:300px;overflow-y:auto">${dependents.map(r => `<span class="repo-chip">${r}</span>`).join('')}</div>
+    </section>`;
+}
+
+function selectKind(kind, li) {
+  clearSelected(); li.classList.add('selected');
+  const det = document.getElementById('detail');
+  det.style.display = '';
+  document.getElementById('hint').style.display = 'none';
+
+  const repos = buildKindToRepos()[kind] || [];
+  // Find which packages define this kind
+  const defPkgs = Object.entries(apiUsage?.packages || {})
+    .filter(([, pd]) => (pd.kinds || []).includes(kind))
+    .map(([p]) => p);
+
+  det.innerHTML = `
+    <h3>${kind}</h3>
+    <section>
+      <h4>Defined in package(s)</h4>
+      <div>${defPkgs.map(p => `<span class="repo-chip">openshift/api/${p}</span>`).join('') || '—'}</div>
+    </section>
+    <section>
+      <h4>Referenced by ${repos.length} repos</h4>
+      <div style="max-height:300px;overflow-y:auto">${repos.sort().map(r => `<span class="repo-chip">${r}</span>`).join('')}</div>
+    </section>`;
+}
+
+function selectModule(mod, li) {
+  clearSelected(); li.classList.add('selected');
+  const det = document.getElementById('detail');
+  det.style.display = '';
+  document.getElementById('hint').style.display = 'none';
+
+  const rev = buildRev();
+  const dependents = (rev[mod] || []).sort();
+  det.innerHTML = `
+    <h3>${mod}</h3>
+    <section>
+      <h4>${dependents.length} repos depend on this (go.mod)</h4>
+      <div style="max-height:400px;overflow-y:auto">${dependents.map(r => `<span class="repo-chip">${r}</span>`).join('')}</div>
+    </section>`;
+}
+
+// ---- Feature Impact Analysis ----
+const STOPWORDS = new Set(['a','an','the','for','of','to','in','at','on','with','using','that',
+  'is','are','which','and','or','not','any','all','this','from','by','be','been','has','have']);
+
+function tokenize(text) {
+  return text.toLowerCase().split(/\W+/).filter(t => t.length >= 3 && !STOPWORDS.has(t));
+}
+
+function scoreRepo(repo, tokens, graphData, apiInfo, meta, platformFilter, classFilter) {
+  let score = 0;
+  const reasons = [];
+
+  if (meta) {
+    const desc = (meta.description || '').toLowerCase();
+    const topics = (meta.topics || []).join(' ').toLowerCase();
+
+    if (tokens.some(t => repo.toLowerCase().includes(t))) {
+      const tok = tokens.find(t => repo.toLowerCase().includes(t));
+      score += 25; reasons.push(`name:${tok}`);
+    }
+    if (tokens.some(t => desc.includes(t))) {
+      const tok = tokens.find(t => desc.includes(t));
+      score += 20; reasons.push(`desc:${tok}`);
+    }
+    if (tokens.some(t => topics.includes(t))) {
+      const tok = tokens.find(t => topics.includes(t));
+      score += 15; reasons.push(`topic:${tok}`);
+    }
+
+    if (classFilter.length) {
+      const repoCls = new Set(meta.classifications || []);
+      const matched = classFilter.filter(c => repoCls.has(c));
+      if (matched.length) { score += 20; reasons.push(`class:${matched.join(',')}`); }
+      else { score -= 10; }
+    }
+    if (platformFilter.length) {
+      const repoPlat = new Set(meta.platforms || []);
+      const matched = platformFilter.filter(p => repoPlat.has(p));
+      if (matched.length) { score += 15; reasons.push(`platform:${matched.join(',')}`); }
+      else { score -= 10; }
+    }
+  } else {
+    if (classFilter.length) score -= 10;
+    if (platformFilter.length) score -= 10;
+  }
+
+  if (apiInfo) {
+    const pkgs = (apiInfo.packages || []).map(p => p.toLowerCase());
+    const kinds = (apiInfo.kinds || []).map(k => k.toLowerCase());
+    if (tokens.some(t => pkgs.some(p => p.includes(t)))) {
+      const tok = tokens.find(t => pkgs.some(p => p.includes(t)));
+      score += 10; reasons.push(`api-pkg:${tok}`);
+    }
+    if (tokens.some(t => kinds.some(k => k.includes(t)))) {
+      const tok = tokens.find(t => kinds.some(k => k.includes(t)));
+      score += 10; reasons.push(`api-kind:${tok}`);
+    }
+  }
+
+  if (graphData) {
+    const deps = (graphData.depends_on || []).map(d => d.toLowerCase());
+    if (tokens.some(t => deps.some(d => d.includes(t)))) {
+      const tok = tokens.find(t => deps.some(d => d.includes(t)));
+      score += 10; reasons.push(`dep:${tok}`);
+    }
+  }
+
+  return { score: Math.max(0, Math.min(100, score)), reasons };
+}
+
+function runImpactAnalysis() {
+  const featureText = document.getElementById('impact-feature').value.trim();
+  if (!featureText) { alert('Please enter a feature description.'); return; }
+
+  const platformFilter = document.getElementById('impact-platform').value
+    .split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+  const classFilter = document.getElementById('impact-class').value
+    .split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+
+  const tokens = tokenize(featureText);
+  if (!tokens.length) { alert('Feature description too short or only stopwords.'); return; }
+
+  const allRepos = new Set([
+    ...Object.keys(graph?.graph || {}),
+    ...Object.keys(apiUsage?.repo_usage || {}),
+    ...Object.keys(repoMeta?.repos || {}),
+  ]);
+
+  const results = [];
+  for (const repo of allRepos) {
+    const graphData = graph?.graph?.[repo] || null;
+    const apiInfo = apiUsage?.repo_usage?.[repo] || null;
+    const meta = repoMeta?.repos?.[repo] || null;
+    const { score, reasons } = scoreRepo(repo, tokens, graphData, apiInfo, meta, platformFilter, classFilter);
+    if (score >= 10) results.push({ repo, score, reasons, meta });
+  }
+  results.sort((a, b) => b.score - a.score);
+  const top = results.slice(0, 50);
+
+  const det = document.getElementById('detail');
+  det.style.display = '';
+  document.getElementById('hint').style.display = 'none';
+
+  const scoreClass = s => s >= 50 ? 'high' : s >= 25 ? 'mid' : 'low';
+  const rows = top.map((r, i) => {
+    const cls = r.meta?.classifications?.join(', ') || '—';
+    const plat = r.meta?.platforms?.join(', ') || '—';
+    const reasons = r.reasons.join(', ') || '—';
+    return `<tr class="result-row" data-repo="${r.repo}">
+      <td>${i + 1}</td>
+      <td><strong>${r.repo}</strong></td>
+      <td><span class="badge ${scoreClass(r.score)}">${r.score}</span></td>
+      <td style="font-size:0.75rem;color:#555">${reasons}</td>
+      <td style="font-size:0.75rem">${cls}</td>
+      <td style="font-size:0.75rem">${plat}</td>
+    </tr>`;
+  }).join('');
+
+  det.innerHTML = `
+    <h3>Feature Impact: "${featureText}"</h3>
+    <p class="meta-desc">${top.length} repos matched (tokens: ${tokens.join(', ')})</p>
+    <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>#</th><th>Repo</th><th>Score</th><th>Reasons</th><th>Classification</th><th>Platforms</th></tr></thead>
+      <tbody>${rows || '<tr><td colspan="6"><em>No repos matched.</em></td></tr>'}</tbody>
+    </table>
+    </div>`;
+
+  det.querySelectorAll('tr.result-row').forEach(tr => {
+    tr.addEventListener('click', () => showRepoDetail(tr.dataset.repo));
+  });
+}
+</script>
+</body>
+</html>

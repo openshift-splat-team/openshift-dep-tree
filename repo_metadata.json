@@ -1,0 +1,3383 @@
+{
+  "fetched_at": "2026-06-04T19:07:51.166512+00:00",
+  "repos": {
+    "agent-installer-utils": {
+      "description": "OpenShift agent based installation utilities",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "OpenShift agent based installation utilities",
+      "stars": 3,
+      "source": "github"
+    },
+    "analytics-operator": {
+      "description": "Provide machine learning insight into clusters, focusing on Anomaly Detection",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Provide machine learning insight into clusters, focusing on Anomaly Detection",
+      "stars": 1,
+      "source": "github"
+    },
+    "api": {
+      "description": "Canonical location of the OpenShift API definition.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Canonical location of the OpenShift API definition.",
+      "stars": 112,
+      "source": "github"
+    },
+    "addon-operator": {
+      "description": "Addon Operator coordinates the lifecycle of Add-ons in managed OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Addon Operator coordinates the lifecycle of Add-ons in managed OpenShift",
+      "stars": 16,
+      "source": "github"
+    },
+    "alibaba-disk-csi-driver-operator": {
+      "description": "Operator that installs and maintains the Alibaba Cloud CSI Driver on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "Operator that installs and maintains the Alibaba Cloud CSI Driver on a cluster",
+      "stars": 0,
+      "source": "github"
+    },
+    "apiserver-library-go": {
+      "description": "k/k dependent helpers for kube-apiserver and openshift-apiserver",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "k/k dependent helpers for kube-apiserver and openshift-apiserver",
+      "stars": 8,
+      "source": "github"
+    },
+    "app-netutil": {
+      "description": "app-netutil is a library that provides API methods for applications to get pod network information.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "app-netutil is a library that provides API methods for applications to get pod network information.",
+      "stars": 20,
+      "source": "github"
+    },
+    "assisted-image-service": {
+      "description": "Provide RHCOS image customization and serving for assisted-installer",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "Provide RHCOS image customization and serving for assisted-installer",
+      "stars": 12,
+      "source": "github"
+    },
+    "appliance": {
+      "description": "OpenShift-based Appliance Builder",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "build"
+      ],
+      "summary": "OpenShift-based Appliance Builder",
+      "stars": 40,
+      "source": "github"
+    },
+    "assisted-installer": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "baremetal"
+      ],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "",
+      "stars": 91,
+      "source": "github"
+    },
+    "assisted-service": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "baremetal"
+      ],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "",
+      "stars": 136,
+      "source": "github"
+    },
+    "assisted-installer-agent": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "",
+      "stars": 35,
+      "source": "github"
+    },
+    "autoscale-tests": {
+      "description": "The autoscale team is migrating our tests into this single repository. Part of the larger efforts of migration from openshift-tests-private.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "cloud-compute",
+        "scaling"
+      ],
+      "summary": "The autoscale team is migrating our tests into this single repository.",
+      "stars": 0,
+      "source": "github"
+    },
+    "aws-ebs-csi-driver-operator": {
+      "description": "The aws-ebs-csi-driver-operator installs and maintains the AWS EBS CSI Driver on a cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "The aws-ebs-csi-driver-operator installs and maintains the AWS EBS CSI Driver on a cluster.",
+      "stars": 5,
+      "source": "github"
+    },
+    "aws-account-operator": {
+      "description": "Operator to manage pool of AWS accounts for Hive",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "Operator to manage pool of AWS accounts for Hive",
+      "stars": 31,
+      "source": "github"
+    },
+    "aws-efs-csi-driver-operator": {
+      "description": "The aws-efs-csi-driver-operator installs and maintains the AWS EFS CSI Driver on a cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "The aws-efs-csi-driver-operator installs and maintains the AWS EFS CSI Driver on a cluster.",
+      "stars": 3,
+      "source": "github"
+    },
+    "aws-efs-operator": {
+      "description": "Operator to manage AWS EFS on OpenShift",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "Operator to manage AWS EFS on OpenShift",
+      "stars": 4,
+      "source": "github"
+    },
+    "aws-vpce-operator": {
+      "description": "Operator to manage AWS VPC Endpoints on OpenShift",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "Operator to manage AWS VPC Endpoints on OpenShift",
+      "stars": 9,
+      "source": "github"
+    },
+    "aws-load-balancer-operator": {
+      "description": "Operator to simplify management of aws-load-balancer-controller",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "Operator to simplify management of aws-load-balancer-controller",
+      "stars": 7,
+      "source": "github"
+    },
+    "azure-disk-csi-driver-operator": {
+      "description": "The azure-disk-csi-driver-operator installs and maintains the Azure Disk CSI Driver on a cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "azure"
+      ],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "The azure-disk-csi-driver-operator installs and maintains the Azure Disk CSI Driver on a cluster.",
+      "stars": 0,
+      "source": "github"
+    },
+    "azure-file-csi-driver-operator": {
+      "description": "The azure-file-csi-driver-operator installs and maintains the Azure File CSI Driver on a cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "azure"
+      ],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "The azure-file-csi-driver-operator installs and maintains the Azure File CSI Driver on a cluster.",
+      "stars": 0,
+      "source": "github"
+    },
+    "azure-service-operator": {
+      "description": "Azure Service Operator allows you to create Azure resources using kubectl",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "azure"
+      ],
+      "classifications": [],
+      "summary": "Azure Service Operator allows you to create Azure resources using kubectl",
+      "stars": 1,
+      "source": "github"
+    },
+    "backplane-cli": {
+      "description": "backplane-cli is a CLI tool to interact with backplane-api.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "backplane-cli is a CLI tool to interact with backplane-api.",
+      "stars": 22,
+      "source": "github"
+    },
+    "backplane-api": {
+      "description": "Backplane is a management service which consolidates all access to OSD and ROSA clusters and cloud provider resources.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Backplane is a management service which consolidates all access to OSD and ROSA clusters and cloud provider resources.",
+      "stars": 7,
+      "source": "github"
+    },
+    "backplane-tools": {
+      "description": "Manages the tools needed to interact with clusters",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "Manages the tools needed to interact with clusters",
+      "stars": 8,
+      "source": "github"
+    },
+    "baremetal-runtimecfg": {
+      "description": "Runtime configuration renderer for OpenShift in platforms without Cloud DNSaaS",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "baremetal"
+      ],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Runtime configuration renderer for OpenShift in platforms without Cloud DNSaaS",
+      "stars": 21,
+      "source": "github"
+    },
+    "bond-cni": {
+      "description": "Bond-cni is for fail-over and high availability of networking in cloudnative orchestration",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Bond-cni is for fail-over and high availability of networking in cloudnative orchestration",
+      "stars": 11,
+      "source": "github"
+    },
+    "bpfman-catalog": {
+      "description": "OLM catalog used to release the Openshift eBPF Manager Operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "operator-framework"
+      ],
+      "summary": "OLM catalog used to release the Openshift eBPF Manager Operator",
+      "stars": 2,
+      "source": "github"
+    },
+    "bugzilla-tools": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "",
+      "stars": 2,
+      "source": "github"
+    },
+    "builder": {
+      "description": "The image run by build pods to execute image building+pushing",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "build"
+      ],
+      "summary": "The image run by build pods to execute image building+pushing",
+      "stars": 33,
+      "source": "github"
+    },
+    "cert-manager-operator": {
+      "description": "OpenShift Cert-Manager Operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "OpenShift Cert-Manager Operator",
+      "stars": 37,
+      "source": "github"
+    },
+    "certman-operator": {
+      "description": "Operator to Manage Let's Encrypt certificates for OpenShift Clusters",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp"
+      ],
+      "classifications": [
+        "security"
+      ],
+      "summary": "Operator to Manage Let's Encrypt certificates for OpenShift Clusters",
+      "stars": 57,
+      "source": "github"
+    },
+    "check-payload": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "",
+      "stars": 20,
+      "source": "github"
+    },
+    "ci-chat-bot": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "",
+      "stars": 45,
+      "source": "github"
+    },
+    "ci-ns-ttl-controller": {
+      "description": "A controller to mange hard and soft TTLs for namespaces.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "A controller to mange hard and soft TTLs for namespaces.",
+      "stars": 4,
+      "source": "github"
+    },
+    "ci-search": {
+      "description": "Provide search for Prow job results from OpenShift CI",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "Provide search for Prow job results from OpenShift CI",
+      "stars": 13,
+      "source": "github"
+    },
+    "ci-search-functions": {
+      "description": "Google Cloud Functions for indexing CI results",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "Google Cloud Functions for indexing CI results",
+      "stars": 2,
+      "source": "github"
+    },
+    "ci-tools": {
+      "description": "DPTP Tooling ",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "DPTP Tooling",
+      "stars": 44,
+      "source": "github"
+    },
+    "cincinnati-operator": {
+      "description": "An operator to manage Cincinnati, the update graph service",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "update"
+      ],
+      "summary": "An operator to manage Cincinnati, the update graph service",
+      "stars": 13,
+      "source": "github"
+    },
+    "ci-tools-standalone": {
+      "description": "Standalone TP Tools",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "Standalone TP Tools",
+      "stars": 0,
+      "source": "github"
+    },
+    "cli-manager": {
+      "description": "Manage CLI plugins for disconnected environments",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Manage CLI plugins for disconnected environments",
+      "stars": 7,
+      "source": "github"
+    },
+    "cli-manager-operator": {
+      "description": "Optional operator to manage OpenShift specific custom Krew index",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Optional operator to manage OpenShift specific custom Krew index",
+      "stars": 9,
+      "source": "github"
+    },
+    "cloud-credential-operator": {
+      "description": "Manage cloud provider credentials as Kubernetes CRDs",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp",
+        "ibm",
+        "nutanix"
+      ],
+      "classifications": [],
+      "summary": "Manage cloud provider credentials as Kubernetes CRDs",
+      "stars": 72,
+      "source": "github"
+    },
+    "cloud-network-config-controller": {
+      "description": "OpenShift cloud network configuration management",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp",
+        "openstack"
+      ],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "OpenShift cloud network configuration management",
+      "stars": 2,
+      "source": "github"
+    },
+    "cloud-ingress-operator": {
+      "description": "Operator to manage cloud Ingress/Load balancer scheme, switching between public/private modes",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "gcp"
+      ],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Operator to manage cloud Ingress/Load balancer scheme, switching between public/private modes",
+      "stars": 35,
+      "source": "github"
+    },
+    "cloud-provider-powervs": {
+      "description": "This is the PowerVS Cloud Provider repository which implements the PowerVS,IBM Cloud Controller Manager (CCM).",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "ibm"
+      ],
+      "classifications": [],
+      "summary": "This is the PowerVS Cloud Provider repository which implements the PowerVS,IBM Cloud Controller Manager (CCM).",
+      "stars": 1,
+      "source": "github"
+    },
+    "cluster-api-actuator-pkg": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [
+        "cloud-compute"
+      ],
+      "summary": "",
+      "stars": 17,
+      "source": "github"
+    },
+    "cluster-api-provider-alibaba": {
+      "description": "OpenShift Machine API provider for Alibaba",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "cloud-compute"
+      ],
+      "summary": "OpenShift Machine API provider for Alibaba",
+      "stars": 5,
+      "source": "github"
+    },
+    "cluster-api-provider-gcp": {
+      "description": "Ability to manage Kubernetes supportable hosts in OpenShift on GCP",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [
+        "cloud-compute"
+      ],
+      "summary": "Ability to manage Kubernetes supportable hosts in OpenShift on GCP",
+      "stars": 11,
+      "source": "github"
+    },
+    "cluster-api-provider-ibmcloud": {
+      "description": "OpenShift Machine API provider for IBM Cloud",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "baremetal",
+        "ibm"
+      ],
+      "classifications": [
+        "cloud-compute"
+      ],
+      "summary": "OpenShift Machine API provider for IBM Cloud",
+      "stars": 5,
+      "source": "github"
+    },
+    "cluster-api-provider-libvirt": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "cloud-compute"
+      ],
+      "summary": "",
+      "stars": 41,
+      "source": "github"
+    },
+    "cluster-authentication-operator": {
+      "description": "OpenShift operator for the top level Authentication and OAuth configs.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "OpenShift operator for the top level Authentication and OAuth configs.",
+      "stars": 54,
+      "source": "github"
+    },
+    "cluster-api-provider-openshift": {
+      "description": "A Cluster API provider to bootstrap OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation",
+        "cloud-compute"
+      ],
+      "summary": "A Cluster API provider to bootstrap OpenShift",
+      "stars": 3,
+      "source": "github"
+    },
+    "cluster-autoscaler-operator": {
+      "description": "Manage Kubernetes cluster-autoscaler deployments",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "cloud-compute",
+        "scaling"
+      ],
+      "summary": "Manage Kubernetes cluster-autoscaler deployments",
+      "stars": 44,
+      "source": "github"
+    },
+    "cluster-baremetal-operator": {
+      "description": "This repository is for a new second level operator for baremetal installs. See https://github.com/openshift/enhancements/pull/212.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "baremetal"
+      ],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "This repository is for a new second level operator for baremetal installs.",
+      "stars": 37,
+      "source": "github"
+    },
+    "cluster-bootstrap": {
+      "description": "Cluster control plane bootstrapping logic for OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "Cluster control plane bootstrapping logic for OpenShift",
+      "stars": 15,
+      "source": "github"
+    },
+    "cluster-capi-operator": {
+      "description": "Openshift Cluster CAPI Operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "openstack"
+      ],
+      "classifications": [],
+      "summary": "Openshift Cluster CAPI Operator",
+      "stars": 13,
+      "source": "github"
+    },
+    "cluster-cloud-controller-manager-operator": {
+      "description": "Operator for managing platform cloud controller managers",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator for managing platform cloud controller managers",
+      "stars": 13,
+      "source": "github"
+    },
+    "cluster-config-operator": {
+      "description": "The canonical location for OpenShift cluster configuration",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "The canonical location for OpenShift cluster configuration",
+      "stars": 32,
+      "source": "github"
+    },
+    "cluster-control-plane-machine-set-operator": {
+      "description": "Operator for managing ControlPlaneMachineSet resources",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "machine-management"
+      ],
+      "summary": "Operator for managing ControlPlaneMachineSet resources",
+      "stars": 6,
+      "source": "github"
+    },
+    "cluster-csi-snapshot-controller-operator": {
+      "description": "The csi-snapshot-controller-operator installs and maintains external CSI snapshot controller on a cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "The csi-snapshot-controller-operator installs and maintains external CSI snapshot controller on a cluster.",
+      "stars": 8,
+      "source": "github"
+    },
+    "cluster-debug-tools": {
+      "description": "Unsupported tools used to investigate broken clusters.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "Unsupported tools used to investigate broken clusters.",
+      "stars": 34,
+      "source": "github"
+    },
+    "cluster-dns-operator": {
+      "description": "The Cluster DNS Operator manages cluster DNS services for OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "The Cluster DNS Operator manages cluster DNS services for OpenShift",
+      "stars": 49,
+      "source": "github"
+    },
+    "cluster-etcd-operator": {
+      "description": "Operator to manage the lifecycle of the etcd members of an OpenShift cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "etcd"
+      ],
+      "summary": "Operator to manage the lifecycle of the etcd members of an OpenShift cluster",
+      "stars": 106,
+      "source": "github"
+    },
+    "cluster-health-analyzer": {
+      "description": "Analyzer of health of OpenShift clusters",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Analyzer of health of OpenShift clusters",
+      "stars": 10,
+      "source": "github"
+    },
+    "cluster-ingress-operator": {
+      "description": "The Cluster Ingress Operator manages highly available network ingress for OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp"
+      ],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "The Cluster Ingress Operator manages highly available network ingress for OpenShift",
+      "stars": 84,
+      "source": "github"
+    },
+    "cluster-image-registry-operator": {
+      "description": "The image registry operator installs+maintains the internal registry on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp",
+        "ibm",
+        "openstack"
+      ],
+      "classifications": [
+        "installation",
+        "image-registry"
+      ],
+      "summary": "The image registry operator installs+maintains the internal registry on a cluster",
+      "stars": 66,
+      "source": "github"
+    },
+    "cluster-kube-apiserver-operator": {
+      "description": "The kube-apiserver operator installs and maintains the kube-apiserver on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "The kube-apiserver operator installs and maintains the kube-apiserver on a cluster",
+      "stars": 83,
+      "source": "github"
+    },
+    "cluster-kube-controller-manager-operator": {
+      "description": "The kube-controller-manager operator installs and maintains the kube-controller-manager on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "The kube-controller-manager operator installs and maintains the kube-controller-manager on a cluster",
+      "stars": 45,
+      "source": "github"
+    },
+    "cluster-kube-descheduler-operator": {
+      "description": "An operator to run descheduler on OpenShift.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "scheduling"
+      ],
+      "summary": "An operator to run descheduler on OpenShift.",
+      "stars": 58,
+      "source": "github"
+    },
+    "cluster-kube-storage-version-migrator-operator": {
+      "description": "Storage migration controller operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Storage migration controller operator",
+      "stars": 9,
+      "source": "github"
+    },
+    "cluster-kube-scheduler-operator": {
+      "description": "Installs and maintains the kube-scheduler on a cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation",
+        "scheduling"
+      ],
+      "summary": "Installs and maintains the kube-scheduler on a cluster.",
+      "stars": 37,
+      "source": "github"
+    },
+    "cluster-logging-operator": {
+      "description": "Operator to support logging subsystem of OpenShift",
+      "topics": [
+        "fluentd",
+        "logcollection",
+        "logging",
+        "vector"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [
+        "monitoring"
+      ],
+      "summary": "Operator to support logging subsystem of OpenShift",
+      "stars": 115,
+      "source": "github"
+    },
+    "cluster-machine-approver": {
+      "description": "The cluster-machine-approver validates and approves CSRs for nodes attempting to join the cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "The cluster-machine-approver validates and approves CSRs for nodes attempting to join the cluster.",
+      "stars": 29,
+      "source": "github"
+    },
+    "cluster-monitoring-operator": {
+      "description": "Manage the OpenShift monitoring stack",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "monitoring"
+      ],
+      "summary": "Manage the OpenShift monitoring stack",
+      "stars": 264,
+      "source": "github"
+    },
+    "cluster-network-operator": {
+      "description": "Create and manage cluster networking configuration",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Create and manage cluster networking configuration",
+      "stars": 110,
+      "source": "github"
+    },
+    "cluster-nfd-operator": {
+      "description": " The Cluster Node Feature Discovery operator manages detection of hardware features and configuration in a Openshift cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "The Cluster Node Feature Discovery operator manages detection of hardware features and configuration in a Openshift cluster.",
+      "stars": 41,
+      "source": "github"
+    },
+    "cluster-node-tuning-operator": {
+      "description": "Manage node-level tuning by orchestrating the tuned daemon.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Manage node-level tuning by orchestrating the tuned daemon.",
+      "stars": 116,
+      "source": "github"
+    },
+    "cluster-olm-operator": {
+      "description": "OpenShift operator that manages the Operator Lifecycle Manager components",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "operator-framework"
+      ],
+      "summary": "OpenShift operator that manages the Operator Lifecycle Manager components",
+      "stars": 7,
+      "source": "github"
+    },
+    "cluster-openshift-apiserver-operator": {
+      "description": "The openshift-apiserver operator installs and maintains the openshift-apiserver on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "The openshift-apiserver operator installs and maintains the openshift-apiserver on a cluster",
+      "stars": 39,
+      "source": "github"
+    },
+    "cluster-resource-override-admission": {
+      "description": "Mutating admission webhook for ClusterResourceOverride",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Mutating admission webhook for ClusterResourceOverride",
+      "stars": 9,
+      "source": "github"
+    },
+    "cluster-policy-controller": {
+      "description": "Controllers required to maintain policy resources to create pods.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Controllers required to maintain policy resources to create pods.",
+      "stars": 6,
+      "source": "github"
+    },
+    "cluster-openshift-controller-manager-operator": {
+      "description": "The openshift-controller-manager operator installs and maintains the openshift-controller-manager on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "The openshift-controller-manager operator installs and maintains the openshift-controller-manager on a cluster",
+      "stars": 23,
+      "source": "github"
+    },
+    "cluster-resource-override-admission-operator": {
+      "description": "Operator for the mutating admission webhook for ClusterResourceOverride",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator for the mutating admission webhook for ClusterResourceOverride",
+      "stars": 19,
+      "source": "github"
+    },
+    "cluster-samples-operator": {
+      "description": "The samples operator installs+maintains the sample templates+imagestreams on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation",
+        "image-registry"
+      ],
+      "summary": "The samples operator installs+maintains the sample templates+imagestreams on a cluster",
+      "stars": 38,
+      "source": "github"
+    },
+    "cluster-storage-operator": {
+      "description": "Operator that sets OCP cluster wide storage defaults",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Operator that sets OCP cluster wide storage defaults",
+      "stars": 47,
+      "source": "github"
+    },
+    "cluster-svcat-apiserver-operator": {
+      "description": "Installs and maintains a singleton instance of the OpenShift Service Catalog API Server on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "Installs and maintains a singleton instance of the OpenShift Service Catalog API Server on a cluster",
+      "stars": 4,
+      "source": "github"
+    },
+    "cluster-version-operator": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "update"
+      ],
+      "summary": "",
+      "stars": 91,
+      "source": "github"
+    },
+    "compliance-operator": {
+      "description": "Operator providing OpenShift cluster compliance checks",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "Operator providing OpenShift cluster compliance checks",
+      "stars": 115,
+      "source": "github"
+    },
+    "configuration-anomaly-detection": {
+      "description": "Configuration anomaly detection for OSD clusters",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "Configuration anomaly detection for OSD clusters",
+      "stars": 25,
+      "source": "github"
+    },
+    "console-dashboards-plugin": {
+      "description": "Plugin to add enhanced dashboards to Openshift console",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "console"
+      ],
+      "summary": "Plugin to add enhanced dashboards to Openshift console",
+      "stars": 6,
+      "source": "github"
+    },
+    "console-operator": {
+      "description": "The console operator installs and maintains the web console on a cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation",
+        "console"
+      ],
+      "summary": "The console operator installs and maintains the web console on a cluster",
+      "stars": 54,
+      "source": "github"
+    },
+    "configure-alertmanager-operator": {
+      "description": "Operator to configure Alertmanager with PagerDuty and DMS.",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "monitoring"
+      ],
+      "summary": "Operator to configure Alertmanager with PagerDuty and DMS.",
+      "stars": 31,
+      "source": "github"
+    },
+    "containernetworking-plugins": {
+      "description": "Reference CNI plugins",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Reference CNI plugins",
+      "stars": 17,
+      "source": "github"
+    },
+    "content-mirror": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "image-registry"
+      ],
+      "summary": "",
+      "stars": 0,
+      "source": "github"
+    },
+    "controller-runtime-common": {
+      "description": "A common place for controller-runtime utils, packages and shared code",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "A common place for controller-runtime utils, packages and shared code",
+      "stars": 0,
+      "source": "github"
+    },
+    "coredns-mdns": {
+      "description": "CoreDNS plugin that serves .local mDNS info over normal DNS",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "CoreDNS plugin that serves .local mDNS info over normal DNS",
+      "stars": 57,
+      "source": "github"
+    },
+    "coredns-ocp-dnsnameresolver": {
+      "description": "CoreDNS plugin that updates the status of the DNSNameResolver custom resources with IP addresses of matching resolved DNS names",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking",
+        "update"
+      ],
+      "summary": "CoreDNS plugin that updates the status of the DNSNameResolver custom resources with IP addresses of matching resolved DNS names",
+      "stars": 2,
+      "source": "github"
+    },
+    "crd-schema-checker": {
+      "description": "Tools to check CRD schemas for compatibility and best practices",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Tools to check CRD schemas for compatibility and best practices",
+      "stars": 37,
+      "source": "github"
+    },
+    "csi-driver-manila-operator": {
+      "description": "Operator for CSI Driver Manila to manage its lifecycle",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "openstack"
+      ],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Operator for CSI Driver Manila to manage its lifecycle",
+      "stars": 11,
+      "source": "github"
+    },
+    "csi-driver-shared-resource-operator": {
+      "description": "Operator for sharing Secrets and ConfigMaps across namespaces",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Operator for sharing Secrets and ConfigMaps across namespaces",
+      "stars": 4,
+      "source": "github"
+    },
+    "csi-driver-shared-resource": {
+      "description": "CSI driver for sharing Secrets and ConfigMaps across namespaces.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "CSI driver for sharing Secrets and ConfigMaps across namespaces.",
+      "stars": 40,
+      "source": "github"
+    },
+    "custom-resource-status": {
+      "description": "Library for handling the status of custom resources in an opinionated way",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Library for handling the status of custom resources in an opinionated way",
+      "stars": 4,
+      "source": "github"
+    },
+    "csi-operator": {
+      "description": "Operator for the ocp-csi bridge",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "openstack"
+      ],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Operator for the ocp-csi bridge",
+      "stars": 25,
+      "source": "github"
+    },
+    "deadmanssnitch-operator": {
+      "description": "Operator to manage deadmanssnitch configs for Openshift Dedicated",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator to manage deadmanssnitch configs for Openshift Dedicated",
+      "stars": 13,
+      "source": "github"
+    },
+    "deprecated-mcp-lifecycle-operator": {
+      "description": "MCP Lifecycle CRD",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "MCP Lifecycle CRD",
+      "stars": 1,
+      "source": "github"
+    },
+    "dpu-network-operator": {
+      "description": "The operator manages the ovn-kube components running on the DPU card for enabling OVS hardware offloading.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "The operator manages the ovn-kube components running on the DPU card for enabling OVS hardware offloading.",
+      "stars": 28,
+      "source": "github"
+    },
+    "egress-router-cni": {
+      "description": "Egress Router CNI plugin",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Egress Router CNI plugin",
+      "stars": 6,
+      "source": "github"
+    },
+    "dpu-operator": {
+      "description": "This operator will manage and configure data processing unit (DPUs) to be used in accelerating/offloading k8s networking functions",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "This operator will manage and configure data processing unit (DPUs) to be used in accelerating/offloading k8s networking functions",
+      "stars": 12,
+      "source": "github"
+    },
+    "elasticsearch-operator": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "",
+      "stars": 73,
+      "source": "github"
+    },
+    "elasticsearch-proxy": {
+      "description": "A reverse proxy to allow OKD authentication, authorization (and other functionality) to Elasticsearch",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "A reverse proxy to allow OKD authentication, authorization (and other functionality) to Elasticsearch",
+      "stars": 9,
+      "source": "github"
+    },
+    "external-dns-operator": {
+      "description": "The ExternalDNS Operator provides simplified ExternalDNS controller management.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp"
+      ],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "The ExternalDNS Operator provides simplified ExternalDNS controller management.",
+      "stars": 33,
+      "source": "github"
+    },
+    "external-secrets-operator": {
+      "description": "External-Secrets Operator for deploying and managing external-secrets.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "External-Secrets Operator for deploying and managing external-secrets.",
+      "stars": 10,
+      "source": "github"
+    },
+    "file-integrity-operator": {
+      "description": "Operator providing OpenShift cluster node file integrity checking",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator providing OpenShift cluster node file integrity checking",
+      "stars": 34,
+      "source": "github"
+    },
+    "frr": {
+      "description": "FRR is free software that implements and manages various IPv4 and IPv6 routing protocols.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "FRR is free software that implements and manages various IPv4 and IPv6 routing protocols.",
+      "stars": 3,
+      "source": "github"
+    },
+    "gatekeeper": {
+      "description": "Gatekeeper is a validating (mutating TBA) webhook that enforces CRD-based policies executed by Open Policy Agent",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Gatekeeper is a validating (mutating TBA) webhook that enforces CRD-based policies executed by Open Policy Agent",
+      "stars": 7,
+      "source": "github"
+    },
+    "gatekeeper-operator": {
+      "description": "Operator for OPA Gatekeeper",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator for OPA Gatekeeper",
+      "stars": 2,
+      "source": "github"
+    },
+    "gcp-filestore-csi-driver-operator": {
+      "description": "The gcp-filestore-csi-driver-operator installs and maintains the GCP Filestore CSI Driver on a cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "The gcp-filestore-csi-driver-operator installs and maintains the GCP Filestore CSI Driver on a cluster.",
+      "stars": 6,
+      "source": "github"
+    },
+    "gcp-pd-csi-driver-operator": {
+      "description": "Operator for GCP Persistent Disk CSI Driver to manage its lifecycle",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Operator for GCP Persistent Disk CSI Driver to manage its lifecycle",
+      "stars": 5,
+      "source": "github"
+    },
+    "gcp-project-operator": {
+      "description": "Operator responsible for managing GCP projects and credentials.",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "Operator responsible for managing GCP projects and credentials.",
+      "stars": 33,
+      "source": "github"
+    },
+    "generic-admission-server": {
+      "description": "A library for writing admission webhooks based on k8s.io/apiserver",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "A library for writing admission webhooks based on k8s.io/apiserver",
+      "stars": 156,
+      "source": "github"
+    },
+    "hive": {
+      "description": "API driven OpenShift cluster provisioning and management",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp",
+        "ibm",
+        "vsphere"
+      ],
+      "classifications": [],
+      "summary": "API driven OpenShift cluster provisioning and management",
+      "stars": 275,
+      "source": "github"
+    },
+    "hypershift": {
+      "description": "Hyperscale OpenShift - clusters with hosted control planes",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp",
+        "ibm",
+        "kubevirt"
+      ],
+      "classifications": [],
+      "summary": "Hyperscale OpenShift - clusters with hosted control planes",
+      "stars": 524,
+      "source": "github"
+    },
+    "hypershift-oadp-plugin": {
+      "description": "This OADP plugin is used to perform backup/restore procedures for HostedControlPlanes.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "azure"
+      ],
+      "classifications": [],
+      "summary": "This OADP plugin is used to perform backup/restore procedures for HostedControlPlanes.",
+      "stars": 5,
+      "source": "github"
+    },
+    "ib-sriov-cni": {
+      "description": "InfiniBand SR-IOV CNI",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "InfiniBand SR-IOV CNI",
+      "stars": 13,
+      "source": "github"
+    },
+    "ibm-powervs-block-csi-driver-operator": {
+      "description": "Operator to install and maintain the IBM PowerVS Block CSI driver on an openshift cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "ibm"
+      ],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "Operator to install and maintain the IBM PowerVS Block CSI driver on an openshift cluster",
+      "stars": 2,
+      "source": "github"
+    },
+    "ibm-vpc-block-csi-driver-operator": {
+      "description": "Operator to install and maintain the IBM VPC Block CSI driver on an openshift cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "ibm"
+      ],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "Operator to install and maintain the IBM VPC Block CSI driver on an openshift cluster",
+      "stars": 2,
+      "source": "github"
+    },
+    "image-based-install-operator": {
+      "description": "The image-based-install-operator creates ISO images containing cluster configuration and optionally attaches them to remote clusters using a BMH",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "baremetal"
+      ],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "The image-based-install-operator creates ISO images containing cluster configuration and optionally attaches them to remote clusters using a BMH",
+      "stars": 2,
+      "source": "github"
+    },
+    "ibm-roks-toolkit": {
+      "description": "Tooling and controllers to enable hosted control plane OpenShift clusters running on IBM Cloud.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "ibm"
+      ],
+      "classifications": [],
+      "summary": "Tooling and controllers to enable hosted control plane OpenShift clusters running on IBM Cloud.",
+      "stars": 22,
+      "source": "github"
+    },
+    "image-customization-controller": {
+      "description": "Image customization controller for metal3 preprovisioningimage",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "baremetal"
+      ],
+      "classifications": [],
+      "summary": "Image customization controller for metal3 preprovisioningimage",
+      "stars": 2,
+      "source": "github"
+    },
+    "image-registry": {
+      "description": "OpenShift cluster image registry",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "image-registry"
+      ],
+      "summary": "OpenShift cluster image registry",
+      "stars": 51,
+      "source": "github"
+    },
+    "imagebuilder": {
+      "description": "Builds Dockerfile using the Docker client (with squashing! and secrets!)",
+      "topics": [
+        "docker",
+        "docker-builder",
+        "dockerfile"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "build"
+      ],
+      "summary": "Builds Dockerfile using the Docker client (with squashing!",
+      "stars": 134,
+      "source": "github"
+    },
+    "installer": {
+      "description": "Install an OpenShift 4.x cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "baremetal",
+        "gcp",
+        "ibm",
+        "nutanix",
+        "openstack",
+        "ovirt",
+        "vsphere"
+      ],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "Install an OpenShift 4.x cluster",
+      "stars": 1550,
+      "source": "github"
+    },
+    "insights-operator": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "",
+      "stars": 42,
+      "source": "github"
+    },
+    "installer-aro-wrapper": {
+      "description": "Installer wrapper for Azure Red Hat OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "azure"
+      ],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "Installer wrapper for Azure Red Hat OpenShift",
+      "stars": 11,
+      "source": "github"
+    },
+    "instaslice-operator": {
+      "description": "InstaSlice Operator facilitates slicing of accelerators using stable APIs",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "InstaSlice Operator facilitates slicing of accelerators using stable APIs",
+      "stars": 51,
+      "source": "github"
+    },
+    "jobset-operator": {
+      "description": "An operator to manage and operator the JobSet located in https://github.com/openshift/kubernetes-sigs-jobset/",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "An operator to manage and operator the JobSet located in https://github.com/openshift/kubernetes-sigs-jobset/",
+      "stars": 1,
+      "source": "github"
+    },
+    "karpenter-operator": {
+      "description": "Manage Karpenter deployments on OpenShift clusters.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Manage Karpenter deployments on OpenShift clusters.",
+      "stars": 0,
+      "source": "github"
+    },
+    "ksan-operator": {
+      "description": "The KSan Operator deploys and manages KubeSAN CSI Driver on OpenShift clusters",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "The KSan Operator deploys and manages KubeSAN CSI Driver on OpenShift clusters",
+      "stars": 6,
+      "source": "github"
+    },
+    "kube-compare": {
+      "description": "A Kubectl plugin to allow to compare a known valid reference configuration and a set of specific cluster configuration CRs.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "A Kubectl plugin to allow to compare a known valid reference configuration and a set of specific cluster configuration CRs.",
+      "stars": 21,
+      "source": "github"
+    },
+    "kubevirt-csi-driver-operator": {
+      "description": "Operator for deploying kubevirt/csi-driver in OCP cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "kubevirt"
+      ],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Operator for deploying kubevirt/csi-driver in OCP cluster",
+      "stars": 0,
+      "source": "github"
+    },
+    "kueue-operator": {
+      "description": "Operator to manage kueue",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator to manage kueue",
+      "stars": 6,
+      "source": "github"
+    },
+    "library": {
+      "description": "Examples and Components for deploying into OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Examples and Components for deploying into OpenShift",
+      "stars": 169,
+      "source": "github"
+    },
+    "library-go": {
+      "description": "Helpers for going from apis and clients to useful runtime constructs",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Helpers for going from apis and clients to useful runtime constructs",
+      "stars": 105,
+      "source": "github"
+    },
+    "lightspeed-agentic-alerts-adapter": {
+      "description": "Alerts adapter for OpenShift Agentic Lightspeed",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Alerts adapter for OpenShift Agentic Lightspeed",
+      "stars": 0,
+      "source": "github"
+    },
+    "lightspeed-agentic-operator": {
+      "description": "An operator to load the Agentic Lightspeed features of OpenShif",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "An operator to load the Agentic Lightspeed features of OpenShif",
+      "stars": 0,
+      "source": "github"
+    },
+    "lightspeed-operator": {
+      "description": "Operator for the OpenShift Lightspeed Service",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator for the OpenShift Lightspeed Service",
+      "stars": 13,
+      "source": "github"
+    },
+    "linuxptp-daemon": {
+      "description": "Linuxptp daemon runs as kubernetes DaemonSet and manages linuxptp processes such as ptp4l, phc2sys and timemaster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Linuxptp daemon runs as kubernetes DaemonSet and manages linuxptp processes such as ptp4l, phc2sys and timemaster.",
+      "stars": 30,
+      "source": "github"
+    },
+    "local-storage-operator": {
+      "description": "Operator for local storage",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Operator for local storage",
+      "stars": 101,
+      "source": "github"
+    },
+    "lvm-operator": {
+      "description": "The LVM Operator deploys and manages LVM storage on OpenShift clusters",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "The LVM Operator deploys and manages LVM storage on OpenShift clusters",
+      "stars": 66,
+      "source": "github"
+    },
+    "lws-operator": {
+      "description": "An operator to manage and operator the LWS located in https://github.com/kubernetes-sigs/lws",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "An operator to manage and operator the LWS located in https://github.com/kubernetes-sigs/lws",
+      "stars": 6,
+      "source": "github"
+    },
+    "machine-api-operator": {
+      "description": "Machine API operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "vsphere"
+      ],
+      "classifications": [
+        "machine-management"
+      ],
+      "summary": "Machine API operator",
+      "stars": 186,
+      "source": "github"
+    },
+    "machine-api-provider-aws": {
+      "description": "Machine API Provider for AWS",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [
+        "machine-management",
+        "cloud-compute"
+      ],
+      "summary": "Machine API Provider for AWS",
+      "stars": 5,
+      "source": "github"
+    },
+    "machine-api-provider-azure": {
+      "description": "Machine API Provider for Azure",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "azure"
+      ],
+      "classifications": [
+        "machine-management",
+        "cloud-compute"
+      ],
+      "summary": "Machine API Provider for Azure",
+      "stars": 5,
+      "source": "github"
+    },
+    "machine-api-provider-gcp": {
+      "description": "Machine API Provider for GCP",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [
+        "machine-management",
+        "cloud-compute"
+      ],
+      "summary": "Machine API Provider for GCP",
+      "stars": 3,
+      "source": "github"
+    },
+    "machine-api-provider-ibmcloud": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "baremetal",
+        "ibm"
+      ],
+      "classifications": [
+        "machine-management",
+        "cloud-compute"
+      ],
+      "summary": "",
+      "stars": 0,
+      "source": "github"
+    },
+    "machine-api-provider-nutanix": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "nutanix"
+      ],
+      "classifications": [
+        "machine-management",
+        "cloud-compute"
+      ],
+      "summary": "",
+      "stars": 2,
+      "source": "github"
+    },
+    "machine-api-provider-openstack": {
+      "description": "An OpenStack Implementation of Machine API using upstream cluster-api-provider-openstack functions as a backend",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "openstack"
+      ],
+      "classifications": [
+        "machine-management",
+        "cloud-compute"
+      ],
+      "summary": "An OpenStack Implementation of Machine API using upstream cluster-api-provider-openstack functions as a backend",
+      "stars": 4,
+      "source": "github"
+    },
+    "machine-api-provider-powervs": {
+      "description": "This repository hosts an implementation of a provider for PowerVS for the OpenShift machine-api",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "ibm"
+      ],
+      "classifications": [
+        "machine-management",
+        "cloud-compute"
+      ],
+      "summary": "This repository hosts an implementation of a provider for PowerVS for the OpenShift machine-api",
+      "stars": 2,
+      "source": "github"
+    },
+    "machine-config-operator": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "vsphere"
+      ],
+      "classifications": [
+        "machine-management"
+      ],
+      "summary": "",
+      "stars": 263,
+      "source": "github"
+    },
+    "managed-cluster-validating-webhooks": {
+      "description": "Set of validating webhooks, based on k8s admission controllers, for OSD clusters",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Set of validating webhooks, based on k8s admission controllers, for OSD clusters",
+      "stars": 25,
+      "source": "github"
+    },
+    "managed-upgrade-operator": {
+      "description": "V4 cluster upgrade automation",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "update"
+      ],
+      "summary": "V4 cluster upgrade automation",
+      "stars": 52,
+      "source": "github"
+    },
+    "managed-velero-operator": {
+      "description": "Operator to manage installation of Velero in OpenShift Managed environments",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "gcp"
+      ],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "Operator to manage installation of Velero in OpenShift Managed environments",
+      "stars": 30,
+      "source": "github"
+    },
+    "mdns-publisher": {
+      "description": "Configurable mDNS publishing aplication",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Configurable mDNS publishing aplication",
+      "stars": 12,
+      "source": "github"
+    },
+    "microshift": {
+      "description": "A small form factor OpenShift/Kubernetes optimized for edge computing",
+      "topics": [
+        "containers",
+        "edge-computing",
+        "hacktoberfest",
+        "hacktoberfest2021",
+        "iot",
+        "k8s",
+        "kubernetes",
+        "openshift"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "A small form factor OpenShift/Kubernetes optimized for edge computing",
+      "stars": 826,
+      "source": "github"
+    },
+    "multi-operator-manager": {
+      "description": "experimental playspace",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "experimental playspace",
+      "stars": 5,
+      "source": "github"
+    },
+    "multus-admission-controller": {
+      "description": "An admission controller for Multus CNI custom resources",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "An admission controller for Multus CNI custom resources",
+      "stars": 10,
+      "source": "github"
+    },
+    "multus-cni": {
+      "description": "Multus CNI a meta plugin for CNI",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Multus CNI a meta plugin for CNI",
+      "stars": 51,
+      "source": "github"
+    },
+    "multus-networkpolicy": {
+      "description": "Kubernetes NetworkPolicy for secondary network attachments",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Kubernetes NetworkPolicy for secondary network attachments",
+      "stars": 10,
+      "source": "github"
+    },
+    "must-gather-clean": {
+      "description": "Obfuscation for must-gathers",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Obfuscation for must-gathers",
+      "stars": 34,
+      "source": "github"
+    },
+    "must-gather-operator": {
+      "description": "Operator to enable CEE members to collect must-gathers from OSDv4 clusters",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator to enable CEE members to collect must-gathers from OSDv4 clusters",
+      "stars": 14,
+      "source": "github"
+    },
+    "network-metrics-daemon": {
+      "description": "network-metrics-daemon is a daemon component that collects and publishes network related metrics",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking",
+        "monitoring"
+      ],
+      "summary": "network-metrics-daemon is a daemon component that collects and publishes network related metrics",
+      "stars": 21,
+      "source": "github"
+    },
+    "network-security-manager": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking",
+        "security"
+      ],
+      "summary": "",
+      "stars": 4,
+      "source": "github"
+    },
+    "node-feature-discovery": {
+      "description": "Node feature discovery, detects the available hardware features and configuration in a cluster. ",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Node feature discovery, detects the available hardware features and configuration in a cluster.",
+      "stars": 17,
+      "source": "github"
+    },
+    "node-observability-agent": {
+      "description": "CRI-O (container runtime interface) and Kubelet (service on each node) scripts to support node-observability-operator.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "CRI-O (container runtime interface) and Kubelet (service on each node) scripts to support node-observability-operator.",
+      "stars": 3,
+      "source": "github"
+    },
+    "node-observability-operator": {
+      "description": "An Operator that will be able to gather debugging/profiling data over a custom period of time which would be helpful to troubleshoot and resolve issues for OpenShift customers.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "An Operator that will be able to gather debugging/profiling data over a custom period of time which would be helpful to troubleshoot and resolve issues for OpenShift customers.",
+      "stars": 6,
+      "source": "github"
+    },
+    "oadp-must-gather": {
+      "description": " OADP Must-gather",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "OADP Must-gather",
+      "stars": 2,
+      "source": "github"
+    },
+    "oadp-operator": {
+      "description": "OADP Operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "OADP Operator",
+      "stars": 91,
+      "source": "github"
+    },
+    "oauth-apiserver": {
+      "description": "Resource API endpoints and WebhookTokenAuthenticator endpoints for the openshift/oauth-server",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "Resource API endpoints and WebhookTokenAuthenticator endpoints for the openshift/oauth-server",
+      "stars": 10,
+      "source": "github"
+    },
+    "oauth-server": {
+      "description": "Coming soon.  Do not import.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "openstack"
+      ],
+      "classifications": [
+        "security"
+      ],
+      "summary": "Coming soon.",
+      "stars": 25,
+      "source": "github"
+    },
+    "observability-ui-operator": {
+      "description": "Operator to add observability UI plugins to the OpenShift web console",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "console"
+      ],
+      "summary": "Operator to add observability UI plugins to the OpenShift web console",
+      "stars": 0,
+      "source": "github"
+    },
+    "oc": {
+      "description": "The OpenShift Command Line, part of OKD",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "The OpenShift Command Line, part of OKD",
+      "stars": 240,
+      "source": "github"
+    },
+    "oc-compliance": {
+      "description": "an oc plugin that fetches the raw compliance results generated by the compliance-operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "an oc plugin that fetches the raw compliance results generated by the compliance-operator",
+      "stars": 15,
+      "source": "github"
+    },
+    "oc-mirror": {
+      "description": "Lifecycle manager for internet-disconnected OpenShift environments",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "image-registry"
+      ],
+      "summary": "Lifecycle manager for internet-disconnected OpenShift environments",
+      "stars": 119,
+      "source": "github"
+    },
+    "ocm-agent": {
+      "description": "ocm-agent running on OSD cluster to talk to OCM api",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "ocm-agent running on OSD cluster to talk to OCM api",
+      "stars": 2,
+      "source": "github"
+    },
+    "ocm-agent-operator": {
+      "description": "operator to manage the ocm-agent service",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "operator to manage the ocm-agent service",
+      "stars": 3,
+      "source": "github"
+    },
+    "ocm-container": {
+      "description": " Containerized environment for accessing OpenShift v4 clusters, packing necessary tools/scripts",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Containerized environment for accessing OpenShift v4 clusters, packing necessary tools/scripts",
+      "stars": 14,
+      "source": "github"
+    },
+    "ocp-release-operator-sdk": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "",
+      "stars": 18,
+      "source": "github"
+    },
+    "ols-load-generator": {
+      "description": "Repository to perform load testing on openshift lightspeed service (OLS)",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Repository to perform load testing on openshift lightspeed service (OLS)",
+      "stars": 2,
+      "source": "github"
+    },
+    "openshift-apiserver": {
+      "description": "Coming soon.  Do not import.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Coming soon.",
+      "stars": 48,
+      "source": "github"
+    },
+    "openshift-controller-manager": {
+      "description": "Coming soon.  Do not import.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Coming soon.",
+      "stars": 27,
+      "source": "github"
+    },
+    "openshift-state-metrics": {
+      "description": "Add-on agent to generate and expose cluster-level metrics for OpenShift specific resources",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "monitoring"
+      ],
+      "summary": "Add-on agent to generate and expose cluster-level metrics for OpenShift specific resources",
+      "stars": 22,
+      "source": "github"
+    },
+    "openshift-tuned": {
+      "description": "Containerized tuned daemon for OpenShift.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Containerized tuned daemon for OpenShift.",
+      "stars": 2,
+      "source": "github"
+    },
+    "openshift-velero-plugin": {
+      "description": "General Velero plugin for backup and restore of openshift workloads.",
+      "topics": [
+        "backup",
+        "plugins-velero",
+        "restore",
+        "velero-plugin"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "General Velero plugin for backup and restore of openshift workloads.",
+      "stars": 54,
+      "source": "github"
+    },
+    "openstack-cinder-csi-driver-operator": {
+      "description": "Operator for OpenStack Cinder CSI Driver to manage its lifecycle",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "openstack"
+      ],
+      "classifications": [
+        "storage"
+      ],
+      "summary": "Operator for OpenStack Cinder CSI Driver to manage its lifecycle",
+      "stars": 6,
+      "source": "github"
+    },
+    "openstack-test": {
+      "description": "OpenStack-specific tests for OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "openstack"
+      ],
+      "classifications": [],
+      "summary": "OpenStack-specific tests for OpenShift",
+      "stars": 9,
+      "source": "github"
+    },
+    "operator-framework-catalogd": {
+      "description": "a custom apiserver that serves FBC catalogs on cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "a custom apiserver that serves FBC catalogs on cluster",
+      "stars": 4,
+      "source": "github"
+    },
+    "operator-framework-olm": {
+      "description": "A management framework for extending Kubernetes with Operators",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "operator-framework"
+      ],
+      "summary": "A management framework for extending Kubernetes with Operators",
+      "stars": 19,
+      "source": "github"
+    },
+    "operator-framework-rukpak": {
+      "description": "Rukpak runs in a Kubernetes cluster and defines an API for installing cloud native bundle content",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation",
+        "operator-framework"
+      ],
+      "summary": "Rukpak runs in a Kubernetes cluster and defines an API for installing cloud native bundle content",
+      "stars": 1,
+      "source": "github"
+    },
+    "operator-framework-operator-controller": {
+      "description": "The central component of Operator Lifecycle Manager (OLM) v1, which extends kubernetes with an API through which users can install Operators",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation",
+        "operator-framework"
+      ],
+      "summary": "The central component of Operator Lifecycle Manager (OLM) v1, which extends kubernetes with an API through which users can install Operators",
+      "stars": 12,
+      "source": "github"
+    },
+    "operator-framework-tooling": {
+      "description": "Developer tooling for the Operator Framework repositories.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Developer tooling for the Operator Framework repositories.",
+      "stars": 2,
+      "source": "github"
+    },
+    "ops-sop-search": {
+      "description": "Application for searching ops-sop",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Application for searching ops-sop",
+      "stars": 0,
+      "source": "github"
+    },
+    "origin": {
+      "description": "Conformance test suite for OpenShift",
+      "topics": [
+        "caas",
+        "ci-cd",
+        "containers",
+        "continuous-delivery",
+        "continuous-deployment",
+        "continuous-integration",
+        "devops",
+        "go",
+        "kubernetes",
+        "openshift",
+        "openshift-origin",
+        "paas"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "azure",
+        "baremetal",
+        "gcp",
+        "ibm",
+        "openstack",
+        "vsphere"
+      ],
+      "classifications": [],
+      "summary": "Conformance test suite for OpenShift",
+      "stars": 8652,
+      "source": "github"
+    },
+    "osd-metrics-exporter": {
+      "description": "Metrics exporter for Openshift Dedicated clusters",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "monitoring"
+      ],
+      "summary": "Metrics exporter for Openshift Dedicated clusters",
+      "stars": 1,
+      "source": "github"
+    },
+    "osd-network-verifier": {
+      "description": "Repository of Preflight Checks test BYOVPC Configurations",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "gcp"
+      ],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Repository of Preflight Checks test BYOVPC Configurations",
+      "stars": 10,
+      "source": "github"
+    },
+    "osdctl": {
+      "description": "CLI for the OSD utilities",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "CLI for the OSD utilities",
+      "stars": 47,
+      "source": "github"
+    },
+    "osde2e": {
+      "description": "Repository of e2e test plumbing for OpenShift Dedicated",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws",
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "Repository of e2e test plumbing for OpenShift Dedicated",
+      "stars": 47,
+      "source": "github"
+    },
+    "osde2e-common": {
+      "description": "SDK for osde2e",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "SDK for osde2e",
+      "stars": 2,
+      "source": "github"
+    },
+    "osin": {
+      "description": "Golang OAuth2 server library",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "Golang OAuth2 server library",
+      "stars": 1933,
+      "source": "github"
+    },
+    "pagerduty-operator": {
+      "description": "A PagerDuty Operator that lives on Hive",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "A PagerDuty Operator that lives on Hive",
+      "stars": 21,
+      "source": "github"
+    },
+    "pagerduty-short-circuiter": {
+      "description": "Pagerduty-CLI to reduce the time taken from when SRE receives a PD alert to when troubleshooting on the cluster actually begins",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Pagerduty-CLI to reduce the time taken from when SRE receives a PD alert to when troubleshooting on the cluster actually begins",
+      "stars": 6,
+      "source": "github"
+    },
+    "pf-status-relay": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "",
+      "stars": 1,
+      "source": "github"
+    },
+    "pf-status-relay-operator": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "",
+      "stars": 2,
+      "source": "github"
+    },
+    "platform-operators": {
+      "description": "Platform Operators allow OpenShift users configure which non-core-payload operators they want on their cluster at install time",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "Platform Operators allow OpenShift users configure which non-core-payload operators they want on their cluster at install time",
+      "stars": 2,
+      "source": "github"
+    },
+    "ptp-operator": {
+      "description": "Manage cluster PTP configuration",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Manage cluster PTP configuration",
+      "stars": 45,
+      "source": "github"
+    },
+    "rbac-permissions-operator": {
+      "description": "Operator to manage RBAC permissions for groups across subsets of namespaces",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "Operator to manage RBAC permissions for groups across subsets of namespaces",
+      "stars": 35,
+      "source": "github"
+    },
+    "reference-addon": {
+      "description": "Reference Addon is a real Addon, created to validate and demonstrate the Addons Flow",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Reference Addon is a real Addon, created to validate and demonstrate the Addons Flow",
+      "stars": 3,
+      "source": "github"
+    },
+    "rosa": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [],
+      "summary": "",
+      "stars": 103,
+      "source": "github"
+    },
+    "release-controller": {
+      "description": "The release controller assembles OpenShift releases from CI inputs",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "The release controller assembles OpenShift releases from CI inputs",
+      "stars": 19,
+      "source": "github"
+    },
+    "route-controller-manager": {
+      "description": "The route-controller-manager provides additional management of ingress and Route resources",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "The route-controller-manager provides additional management of ingress and Route resources",
+      "stars": 8,
+      "source": "github"
+    },
+    "route-monitor-operator": {
+      "description": "Operator for monitoring liveness of Routes and URL's on OpenShift",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "monitoring"
+      ],
+      "summary": "Operator for monitoring liveness of Routes and URL's on OpenShift",
+      "stars": 39,
+      "source": "github"
+    },
+    "route-override-cni": {
+      "description": "CNI plugin to override routes",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "CNI plugin to override routes",
+      "stars": 16,
+      "source": "github"
+    },
+    "router": {
+      "description": "Ingress controller for OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Ingress controller for OpenShift",
+      "stars": 83,
+      "source": "github"
+    },
+    "run-once-duration-override": {
+      "description": " Webhook that makes it possible to override activeDeadlineSecondsOverride field during pod admission",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Webhook that makes it possible to override activeDeadlineSecondsOverride field during pod admission",
+      "stars": 1,
+      "source": "github"
+    },
+    "run-once-duration-override-operator": {
+      "description": "Operator deploying webhook that makes it possible to override activeDeadlineSecondsOverride field during pod admission",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "Operator deploying webhook that makes it possible to override activeDeadlineSecondsOverride field during pod admission",
+      "stars": 1,
+      "source": "github"
+    },
+    "runtime-utils": {
+      "description": "Utilities for configuring container runtimes on OpenShift, such as cri-o, podman, and buildah.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "build"
+      ],
+      "summary": "Utilities for configuring container runtimes on OpenShift, such as cri-o, podman, and buildah.",
+      "stars": 3,
+      "source": "github"
+    },
+    "sandboxed-containers-operator": {
+      "description": "An operator to enhance an Openshift/Kubernetes cluster to support running sandboxed containers",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "An operator to enhance an Openshift/Kubernetes cluster to support running sandboxed containers",
+      "stars": 48,
+      "source": "github"
+    },
+    "scapresults": {
+      "description": "A helper script used by openshift/compliance-operator to upload OpenSCAP scan results into a configMap",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "A helper script used by openshift/compliance-operator to upload OpenSCAP scan results into a configMap",
+      "stars": 2,
+      "source": "github"
+    },
+    "sdn": {
+      "description": "",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "",
+      "stars": 93,
+      "source": "github"
+    },
+    "secondary-scheduler-operator": {
+      "description": "Red Hat Certified optional operator for secondary schedulers",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security",
+        "scheduling"
+      ],
+      "summary": "Red Hat Certified optional operator for secondary schedulers",
+      "stars": 21,
+      "source": "github"
+    },
+    "secrets-store-csi-driver-operator": {
+      "description": "Operator to install and run the Secrets Store CSI driver on OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "Operator to install and run the Secrets Store CSI driver on OpenShift",
+      "stars": 2,
+      "source": "github"
+    },
+    "sippy": {
+      "description": "Sippy provides dashboards for the openshift CI test/job data",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "gcp"
+      ],
+      "classifications": [],
+      "summary": "Sippy provides dashboards for the openshift CI test/job data",
+      "stars": 34,
+      "source": "github"
+    },
+    "service-ca-operator": {
+      "description": "Controller to mint and manage serving certificates for Kubernetes services",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "Controller to mint and manage serving certificates for Kubernetes services",
+      "stars": 46,
+      "source": "github"
+    },
+    "source-to-image": {
+      "description": "A tool for building artifacts from source and injecting into container images",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "build"
+      ],
+      "summary": "A tool for building artifacts from source and injecting into container images",
+      "stars": 2537,
+      "source": "github"
+    },
+    "skydive-operator": {
+      "description": "An operator for Skydive, a networking analysis project",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "An operator for Skydive, a networking analysis project",
+      "stars": 0,
+      "source": "github"
+    },
+    "special-resource-operator": {
+      "description": "SRO supports out-of-tree and third-party kernel drivers and the support software for the node OS via containers.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "SRO supports out-of-tree and third-party kernel drivers and the support software for the node OS via containers.",
+      "stars": 16,
+      "source": "github"
+    },
+    "splunk-forwarder-operator": {
+      "description": "",
+      "topics": [
+        "osdv4"
+      ],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "",
+      "stars": 31,
+      "source": "github"
+    },
+    "sriov-network-device-plugin": {
+      "description": "An SRIOV device plugin plugin",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "An SRIOV device plugin plugin",
+      "stars": 15,
+      "source": "github"
+    },
+    "sriov-cni": {
+      "description": "An SRIOV CNI plugin",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "An SRIOV CNI plugin",
+      "stars": 86,
+      "source": "github"
+    },
+    "sriov-dp-admission-controller": {
+      "description": "An admission controller for SRIOV device plugin resources",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "An admission controller for SRIOV device plugin resources",
+      "stars": 4,
+      "source": "github"
+    },
+    "sriov-network-operator": {
+      "description": "SR-IOV Network Operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "SR-IOV Network Operator",
+      "stars": 150,
+      "source": "github"
+    },
+    "sriov-tests": {
+      "description": "e2e tests for SR-IOV CNI, Device Plugin, Admission Controller and Operator",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "e2e tests for SR-IOV CNI, Device Plugin, Admission Controller and Operator",
+      "stars": 0,
+      "source": "github"
+    },
+    "telemeter": {
+      "description": "Prometheus push federation",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "monitoring"
+      ],
+      "summary": "Prometheus push federation",
+      "stars": 106,
+      "source": "github"
+    },
+    "tektoncd-pipeline-operator": {
+      "description": "tektoncd-pipeline operator for Kubernetes to manage installation, updation and uninstallation of tekton-cd pipelines.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "installation"
+      ],
+      "summary": "tektoncd-pipeline operator for Kubernetes to manage installation, updation and uninstallation of tekton-cd pipelines.",
+      "stars": 53,
+      "source": "github"
+    },
+    "tls-scanner": {
+      "description": "TLS port scanning tool",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "security"
+      ],
+      "summary": "TLS port scanning tool",
+      "stars": 2,
+      "source": "github"
+    },
+    "vcf-migration-operator": {
+      "description": "Operator to manage OpenShift migration between vCenters",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "vsphere"
+      ],
+      "classifications": [],
+      "summary": "Operator to manage OpenShift migration between vCenters",
+      "stars": 0,
+      "source": "github"
+    },
+    "vertical-pod-autoscaler-operator": {
+      "description": "An Operator for running the Vertical Pod Autoscaler on OpenShift",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "cloud-compute",
+        "scaling"
+      ],
+      "summary": "An Operator for running the Vertical Pod Autoscaler on OpenShift",
+      "stars": 33,
+      "source": "github"
+    },
+    "vmware-vsphere-csi-driver-operator": {
+      "description": "The vmware-vsphere-csi-driver-operator installs and maintains the VMWare vSphere CSI Driver on a cluster.",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "vsphere"
+      ],
+      "classifications": [
+        "storage",
+        "installation"
+      ],
+      "summary": "The vmware-vsphere-csi-driver-operator installs and maintains the VMWare vSphere CSI Driver on a cluster.",
+      "stars": 9,
+      "source": "github"
+    },
+    "whereabouts-cni": {
+      "description": "Cluster-wide IPAM CNI plugin",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [
+        "networking"
+      ],
+      "summary": "Cluster-wide IPAM CNI plugin",
+      "stars": 38,
+      "source": "github"
+    },
+    "vsphere-problem-detector": {
+      "description": "OpenShift operator that monitors & reports issues with vSphere cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "vsphere"
+      ],
+      "classifications": [],
+      "summary": "OpenShift operator that monitors & reports issues with vSphere cluster",
+      "stars": 12,
+      "source": "github"
+    },
+    "windows-machine-config-operator": {
+      "description": "Windows MCO for OpenShift that handles addition of Windows nodes to the cluster",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [
+        "aws"
+      ],
+      "classifications": [
+        "machine-management"
+      ],
+      "summary": "Windows MCO for OpenShift that handles addition of Windows nodes to the cluster",
+      "stars": 50,
+      "source": "github"
+    },
+    "zero-trust-workload-identity-manager": {
+      "description": "OpenShift SPIRE Operator for deploying and managing Spiffe/Spire",
+      "topics": [],
+      "fork": false,
+      "upstream": null,
+      "platforms": [],
+      "classifications": [],
+      "summary": "OpenShift SPIRE Operator for deploying and managing Spiffe/Spire",
+      "stars": 8,
+      "source": "github"
+    }
+  }
+}
